@@ -1,0 +1,62 @@
+#select-artists{
+  width: 600px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #25282e;
+  .search-box {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    .search-input-box{
+        color: #000;
+        background: #fff;
+        height: 40px;
+        width: 100%;
+        padding: 5px 10px 5px 35px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .search-progress{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .search-icon{
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        color: rgba(0, 0, 0, 0.3) !important;
+        font-size: 24px;
+    }
+  }
+
+  .md-button{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 90%;
+  }
+
+  .main {
+    height: 83%;
+    .artist-container{
+      padding: 20px;
+      height: 100%;
+      display: -webkit-box;
+      .scrollable{
+        display: inline-flex;
+      }
+      .contact-item {
+        height: 80px;
+        padding: 10px 20px 10px 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .no-results {
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+      }
+    }
+
+  }
+}

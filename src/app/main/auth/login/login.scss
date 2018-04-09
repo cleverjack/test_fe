@@ -1,0 +1,208 @@
+#landing-login {
+    height: 100%;
+    //background: url('/assets/images/backgrounds/march.jpg') no-repeat;
+    background-color: rgba(40, 44, 54, 1);
+    background-size: cover;
+
+    #login-form-wrapper {
+        flex: 1 0 auto;
+        padding: 0px;
+
+        #login-form {
+            width: 384px;
+            max-width: 384px;
+            padding: 32px;
+            background: rgba(40, 44, 54, 1);
+            color: #FFF;
+            text-align: center;
+
+            .logo {
+                width: 128px;
+                height: 128px;
+                line-height: 128px;
+                font-size: 86px;
+                font-weight: 500;
+                margin: 32px auto;
+                color: #FFFFFF;
+                border-radius: 2px;
+            }
+
+            .title {
+                font-size: 17px;
+                margin: 16px 0 32px 0;
+            }
+
+            form {
+                width: 100%;
+                text-align: left;
+                color: #FFF;
+
+                md-checkbox {
+                    margin: 0;
+                    color: #FFF;
+                }
+
+                .remember-forgot-password {
+                    font-size: 13px;
+                    margin-top: 8px;
+
+                    .remember-me {
+                        margin-bottom: 16px
+                    }
+
+                    .forgot-password {
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-bottom: 16px;
+                        cursor: pointer;
+                    }
+                }
+
+                .submit-button {
+                    width: 220px;
+                    margin: 16px auto;
+                    display: block;
+                }
+            }
+
+            .error {
+                text-align: center;
+            }
+
+            .register {
+                margin: 32px auto 24px auto;
+                width: 250px;
+                font-weight: 500;
+
+                .text {
+                    margin-right: 8px;
+                }
+
+                .link {
+
+                }
+            }
+
+            .separator {
+                font-size: 15px;
+                font-weight: 600;
+                margin: 24px auto 16px auto;
+                position: relative;
+                overflow: hidden;
+                width: 100px;
+                color: rgba(0, 0, 0, 0.54);
+
+                .text {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    position: relative;
+                    padding: 0 8px;
+                    z-index: 9999;
+                    color: #FFF;
+                    &:before, &:after {
+                        content: '';
+                        display: block;
+                        width: 30px;
+                        position: absolute;
+                        top: 10px;
+                        border-top: 1px solid rgba(255, 255, 255, 0.12);
+                    }
+
+                    &:before {
+                        right: 100%;
+                    }
+
+                    &:after {
+                        left: 100%;
+                    }
+                }
+            }
+
+            .md-button {
+                color: #BAB7B7;
+                &.google,
+                &.facebook,
+                &.twitter,
+                &.instagram {
+                    width: 192px;
+                    text-transform: none;
+                    color: #BAB7B7;
+                    font-size: 13px;
+
+                    md-icon {
+                        color: #BAB7B7;
+                        margin: 0 8px 0 0;
+                    }
+                }
+
+                &.google {
+                    background-color: #D73D32;
+                }
+
+                &.facebook {
+                    background-color: #3f5c9a;
+                }
+
+                &.twitter{
+                  background-color: #4CCBF4;
+                }
+
+                &.instagram{
+                  background-color: #4c68d7;
+                }
+            }
+        }
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #8A8A8A !important;
+}
+
+input{
+    color: #BAB7B7 !important;
+}
+
+.error{
+    color: #d50000;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.success{
+    color: rgb(9, 210, 97);
+    font-size: 20px;
+    text-align: left;
+}
+
+// RESPONSIVE
+@media screen and (max-width: $layout-breakpoint-xs) {
+
+    #login {
+
+        #login-form-wrapper {
+            padding: 16px;
+
+            #login-form {
+                padding: 24px;
+                width: 100%;
+
+                form {
+
+                    .md-button {
+                        width: 90%;
+                    }
+                }
+
+                .md-button {
+
+                    &.google,
+                    &.facebook {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

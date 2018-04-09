@@ -1,0 +1,23 @@
+#similar {
+    .similar-title {
+        font-weight: 300;
+        margin: 40px 0px 12px 12px;
+    }
+    .albums-image, .empty-albums-image {
+        //border-radius: 50%;
+        md-backdrop, img {
+            //border-radius: 50%;
+        }
+        &:before {
+            top: 45%;
+        }
+    }
+    md-card {
+        margin: 12px 12px 20px;
+    }
+    .container {
+        @media (max-width: 404px) {
+            justify-content: center;
+        }
+    }
+}

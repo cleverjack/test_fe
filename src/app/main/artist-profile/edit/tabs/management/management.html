@@ -1,0 +1,168 @@
+<div id="artist-edit-management-musician">
+	<form name="generalForm" ng-submit="vm.saveGeneralInfo()" novalidate>
+		<h1>General Information</h1>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="personal-input pr-20" layout="column" flex="100" flex-gt-xs="50">
+				<md-input-container>
+					<label>Artist Name (One Field Only)</label>
+					<input type="text" name="name" ng-model="vm.generalForm.name">
+				</md-input-container>
+			</div>
+		</div>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="personal-input pr-20" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<md-input-container>
+					<label>Username</label>
+					<input type="text" name="username" ng-model="vm.generalForm.username">
+					<!--<input type="text" name="username" ng-model="vm.form.username" required>-->
+					<!--<div ng-messages="managementForm.username.$error" role="alert">-->
+						<!--<div ng-message="required">-->
+							<!--<span>FirstName field is required</span>-->
+						<!--</div>-->
+					<!--</div>-->
+				</md-input-container>
+			</div>
+			<div class="personal-input personal-input-r pl-20 pr-20" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<md-input-container>
+					<label>Email</label>
+					<input type="text" name="email" ng-model="vm.generalForm.email">
+				</md-input-container>
+			</div>
+			<div class="personal-input personal-input-l pl-20 pr-20" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<md-input-container class="location">
+					<label>Location</label>
+					<md-select ng-model="vm.generalForm.location">
+						<md-option><em>None</em></md-option>
+						<md-option ng-repeat="location in vm.countries" ng-value="location.code">
+							{{location.name}}
+						</md-option>
+					</md-select>
+				</md-input-container>
+			</div>
+			<div class="personal-input gender pl-20" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<label class="gender-text">Gender</label>
+				<md-radio-group ng-model="vm.generalForm.gender" name="gender" layout="row">
+					<md-radio-button value="female">Female</md-radio-button>
+					<md-radio-button value="male">Male</md-radio-button>
+				</md-radio-group>
+			</div>
+		</div>
+		<md-divider class="ng-scope md-default-theme"></md-divider>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="social-div pr-20" layout="column" flex="100" flex-gt-md="50">
+				<md-input-container>
+					<label>Website</label>
+					<input type="text" name="website" ng-model="vm.generalForm.website">
+				</md-input-container>
+			</div>
+			<div class="social-div pl-20" layout="column" flex="100" flex-gt-md="50">
+				<md-input-container>
+					<label>Twitter Link</label>
+					<input type="text" name="twitter" ng-model="vm.generalForm.twitter">
+				</md-input-container>
+			</div>
+			<div class="social-div pr-20" layout="column" flex="100" flex-gt-md="50">
+				<md-input-container>
+					<label>Facebook Link</label>
+					<input type="text" name="facebook" ng-model="vm.generalForm.facebook">
+				</md-input-container>
+			</div>
+			<div class="social-div pl-20" layout="column" flex="100" flex-gt-md="50">
+				<md-input-container>
+					<label>Instagram Link</label>
+					<input type="text" name="instagram" ng-model="vm.generalForm.instagram">
+				</md-input-container>
+			</div>
+		</div>
+		<div layout="row" layout-align="end center" layout-wrap>
+		<md-button type="submit" class="md-raised btn-save" ng-disabled="generalForm.$invalid || generalForm.$pristine">
+			<md-icon md-font-icon="icon-content-save" class="s16"></md-icon>
+			Save
+		</md-button>
+	</div>
+	</form>
+	<md-divider class="ng-scope md-default-theme"></md-divider>
+	<form name="contactForm" ng-submit="vm.saveContactInfo()" novalidate>
+		<h1>Artist Management Contact Information</h1>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="contact-input pr-15" layout="column" flex="100" flex-gt-md="33" flex-gt-sm="50">
+				<md-input-container>
+					<label>Company Name</label>
+					<input type="text" name="company" ng-model="vm.form.company">
+				</md-input-container>
+			</div>
+			<div class="contact-input contact-input-r pl-15 pr-15" layout="column" flex="100" flex-gt-md="33" flex-gt-sm="50">
+				<md-input-container>
+					<label>Contact Name</label>
+					<input type="text" name="contact" ng-model="vm.form.contact">
+				</md-input-container>
+			</div>
+			<div class="contact-input contact-input-l pl-15" layout="column" flex="100" flex-gt-md="33" flex-gt-sm="50">
+				<md-input-container>
+					<label>Address</label>
+					<input type="text" name="address" ng-model="vm.form.address">
+				</md-input-container>
+			</div>
+		</div>
+		<div layout="row" layout-align="space-between start" flex="100" layout-wrap>
+			<div class="phone-input pr-20" layout="column" flex="100" flex-gt-xs="50">
+				<md-input-container>
+					<label>Phone</label>
+					<input type="text" name="phone" ng-model="vm.form.phone">
+				</md-input-container>
+			</div>
+			<div class="phone-input pl-20" layout="column" flex="100" flex-gt-xs="50">
+				<md-button class="md-raised btn-verify" ng-click="">
+					<md-icon md-font-icon="icon-phone" class="s16"></md-icon>
+					Phone verify
+				</md-button>
+			</div>
+		</div>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="phone-input pr-20" layout="column" flex="100" flex-gt-xs="50">
+				<md-input-container>
+					<label>Email</label>
+					<input type="text" name="email" ng-model="vm.form.email">
+				</md-input-container>
+			</div>
+			<div class="phone-input pl-20" layout="column" flex="100" flex-gt-xs="50">
+				<md-input-container>
+					<label>Label</label>
+					<input type="text" name="label" ng-model="vm.form.label">
+				</md-input-container>
+			</div>
+		</div>
+		<div layout="row" layout-align="end center" layout-wrap>
+			<md-button class="md-raised btn-save" ng-click="">
+				<md-icon md-font-icon="icon-content-save" class="s16"></md-icon>
+				Save
+			</md-button>
+		</div>
+	</form>
+	<md-divider class="ng-scope md-default-theme"></md-divider>
+	<form name="paymentForm" ng-submit="" novalidate>
+		<h1>Payment Information</h1>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="fist-input" layout="column" flex="100">
+				<md-input-container>
+					<label>Enter the Email address associated with your Paypal account</label>
+					<input type="text" name="paymentaddress" ng-model="vm.form.paymentaddress" ng-pattern="/^.+@.+\..+$/" ng-disabled="vm.paymentconnected" required>
+					<div ng-messages="paymentForm.paymentaddress.$error" role="alert">
+						<div ng-message="required">
+							<span>Website field is required</span>
+						</div>
+					</div>
+				</md-input-container>
+			</div>
+		</div>
+		<div layout="row" layout-align="end center" layout-wrap>
+		<md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)">
+			<!--<md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)">-->
+			<md-icon ng-if="!vm.paymentconnected" md-font-icon="icon-plus-circle-outline" class="s16"></md-icon>
+			<md-icon ng-if="vm.paymentconnected" md-font-icon="icon-minus-circle-outline" class="s16"></md-icon>
+			<span ng-if="!vm.paymentconnected">Connect Account</span>
+			<span ng-if="vm.paymentconnected">Disconnect Account</span>
+		</md-button>
+	</div>
+	</form>
+</div>

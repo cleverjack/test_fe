@@ -1,0 +1,39 @@
+#success-dlg{
+    align-items: center;
+    width: 900px;
+    height: 320px;
+
+    .md-primary{
+        font-size: 20px;
+        margin-top: 10px;
+        background-color: white;
+        position: absolute;
+        bottom: 10%;
+        padding: 5px 12px;
+        border-radius: 3px;
+    }
+
+    .md-primary:hover {
+        background-color: #878787;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .md-close, .md-close:hover {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        min-width: 2%;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .md-close:hover > md-icon > svg{
+        color:#878787;
+    }
+
+    .md-close > md-icon > svg{;
+        color: white;
+        fill: inherit;
+    }
+}

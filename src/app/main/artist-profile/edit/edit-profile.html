@@ -1,0 +1,142 @@
+<div id="artist-edit-profile" class="page-layout simple tabbed">
+  <!-- HEADER -->
+  <div class="header md-accent-bg" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end" ng-style="{'background-image': 'url(' + vm.musician.image_large + ')'}">
+      <div class="user-info" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="start center">
+          <img ng-if="vm.musician.image_small" class="profile-image avatar huge" ng-src="{{vm.musician.image_small}}">
+          <img ng-if="!vm.musician.image_small" class="profile-image avatar huge" src="assets/images/avatars/katherine.jpg">
+          <div class="name">{{vm.musician.name}}</div>
+      </div>
+
+      <div class="actions" layout="row" layout-align="end center">
+          <md-button class="md-raised md-accent" aria-label="Follow" translate="PROFILE.FOLLOW"
+                    translate-attr-aria-label="PROFILE.FOLLOW">Follow
+          </md-button>
+          <md-button class="md-raised md-primary" translate="PROFILE.SEND_MESSAGE"
+                    translate-attr-aria-label="PROFILE.SEND_MESSAGE">Send Message
+          </md-button>
+      </div>
+  </div>
+  <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <md-tabs md-dynamic-height md-center-tabs="false">
+
+        <md-tab>
+          <md-tab-label>
+            <span>Music</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="music-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/music/music.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Bio</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="bio-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/about/about.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Similar Artists</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="similar-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/similar/similar.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Management</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="personal-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/management/management.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <!--
+        <md-tab>
+          <md-tab-label>
+            <span>Personal Info</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="personal-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/personal_info/personal_info.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Account Settings</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="account-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/account_settings/account_settings.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Payment Info</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="payment-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/payment_info/payment_info.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        -->
+        <md-tab>
+          <md-tab-label>
+            <span>Service Plans</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="service-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/service_plans/service_plans.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Business</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="dashboard-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/dashboard/dashboard.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Promote</span>
+          </md-tab-label>
+          <md-tab-body>
+            <!--<md-content class="fans-tab"-->
+                        <!--ng-include="'app/main/artist-profile/edit/tabs/fans/fans.html'">-->
+            <!--</md-content>-->
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Fans</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="fans-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/fans/fans.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+      </md-tabs>
+    </div>
+    <!-- / CONTENT -->
+
+  </div>

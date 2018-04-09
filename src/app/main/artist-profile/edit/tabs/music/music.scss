@@ -1,0 +1,55 @@
+#artist-edit-music-musician {
+    .music-title {
+        font-weight: 300;
+        margin: 40px 0px 12px 12px;
+    }
+    .albums-image, .empty-albums-image {
+        .logo-icon-edit {
+            right: 35px;
+        }
+        &:before {
+            top: 45%;
+        }
+    }
+    md-card {
+        margin: 12px 12px 20px;
+    }
+    .container {
+        .ms-responsive-table-wrapper {
+            padding: 0px 12px;
+            width: 100%;
+            .music-title, .music-artist-name {
+                min-width: 150px;
+            }
+        }
+        table.dataTable.row-border tbody td {
+            padding: 0px 8px;
+        }
+        .icon {
+            text-align: center;
+        }
+        .add-popular {
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            text-align: left;
+            color: #8461b4;
+            md-icon {
+                color: #8461b4 !important;
+                padding-right: 20px;
+                height: 16px !important;
+            }
+        }
+        @media (max-width: 404px) {
+            justify-content: center;
+        }
+    }
+
+    hr {
+        margin: 40px 12px;
+        border: solid 1px #22262f;
+    }
+    table.dataTable.row-border tbody td.play-pause {
+      width: 46px;
+    }
+}

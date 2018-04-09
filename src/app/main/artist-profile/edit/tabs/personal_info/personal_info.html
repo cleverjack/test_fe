@@ -1,0 +1,55 @@
+<div id="artist-edit-personal_info-musician">
+	<form name="personalForm" ng-submit="vm.tokenConfirm(vm.form)" novalidate>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="fist-input" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<md-input-container>
+					<label>First Name</label>
+					<input type="text" name="firstname" ng-model="vm.form.firstname" required>
+					<div ng-messages="personalForm.firstname.$error" role="alert">
+						<div ng-message="required">
+							<span>FirstName field is required</span>
+						</div>
+					</div>
+				</md-input-container>
+			</div>
+			<div class="fist-input" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<md-input-container>
+					<label>Last Name</label>
+					<input type="text" name="lastname" ng-model="vm.form.lastname">
+				</md-input-container>
+			</div>
+			<div class="fist-input" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<md-input-container class="location">
+					<label>Location</label>
+					<md-select ng-model="vm.form.location">
+						<md-option><em>None</em></md-option>
+						<md-option ng-repeat="location in vm.countries" ng-value="location.code">
+							{{location.name}}
+						</md-option>
+					</md-select>
+				</md-input-container>
+			</div>
+			<div class="fist-input gender" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+				<label class="gender-text">Gender</label>
+				<md-radio-group ng-model="vm.form.gender" name="gender" layout="row">
+					<md-radio-button value="female">Female</md-radio-button>
+					<md-radio-button value="male">Male</md-radio-button>
+				</md-radio-group>
+			</div>
+		</div>
+		<div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+			<div class="fist-input" layout="column" flex="100" flex-gt-xs="100" flex-gt-md="100">
+				<md-input-container>
+					<label>Website</label>
+					<input type="text" name="website" ng-model="vm.form.website">
+				</md-input-container>
+			</div>
+		</div>
+		<div layout="row" layout-align="end center" layout-wrap>
+			<md-button class="md-raised btn-save" ng-click="vm.saveArtistInfo(vm.form)" ng-disabled="personalForm.$invalid || personalForm.$pristine">
+				<md-icon md-font-icon="icon-content-save" class="s16"></md-icon>
+				Save
+			</md-button>
+		</div>
+	</form>
+</div>

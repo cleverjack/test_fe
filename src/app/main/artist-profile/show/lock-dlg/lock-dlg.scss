@@ -1,0 +1,75 @@
+#lock-dlg{
+
+    position: absolute;
+    //bottom: 150px;
+    width: 500px;
+    height: 300px;
+    background-color: lightgrey;
+    align-items: center;
+    padding: 50px;
+    .lock-icon-border {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      border-style: solid;
+      border-width: 5px;
+      border-color: #fff;
+      i {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+        padding: 5px;
+        padding-top: 5px;
+      }
+    }
+
+  .desc {
+    margin-top: 35px;
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .md-primary {
+    margin-top: 35px;
+    background-color: aliceblue;
+  }
+
+  //align-items: center;
+  //width: 900px;
+  //height: 320px;
+  //
+  //.md-primary{
+  //  font-size: 20px;
+  //  margin-top: 10px;
+  //  background-color: white;
+  //  position: absolute;
+  //  bottom: 10%;
+  //  padding: 5px 12px;
+  //  border-radius: 3px;
+  //}
+  //
+  //.md-primary:hover {
+  //  background-color: #878787;
+  //  color: white;
+  //  border-radius: 3px;
+  //}
+  //
+  //.md-close, .md-close:hover {
+  //  position: absolute;
+  //  top: 10px;
+  //  right: 10px;
+  //  min-width: 2%;
+  //  box-shadow: none;
+  //  background: transparent;
+  //}
+  //
+  //.md-close:hover > md-icon > svg{
+  //  color:#878787;
+  //}
+  //
+  //.md-close > md-icon > svg{;
+  //  color: white;
+  //  fill: inherit;
+  //}
+}

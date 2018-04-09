@@ -1,0 +1,90 @@
+<div id="artist-show-music-profile">
+    <p class="music-title font-size-24">Singles</p>
+    <div class="container" layout="row" layout-wrap ng-if="vm.populars.length">
+        <table class="dataTable row-border hover" ms-responsive-table>
+            <colgroup>
+                <col width="5%">
+                <col width="45%">
+                <col width="40%">
+                <col width="5%">
+                <col width="5%">
+            </colgroup>
+            <thead>
+            <th></th>
+            <th class="secondary-text">
+                <div class="table-header">
+                    <span class="column-title">Title</span>
+                </div>
+            </th>
+            <th class="secondary-text">
+                <div class="table-header">
+                    <span class="column-title">Artist</span>
+                </div>
+            </th>
+            <th class="secondary-text">
+                <div class="table-header">
+                    <span class="column-title">Time</span>
+                </div>
+            </th>
+            <th></th>
+            </thead>
+            <tbody>
+            <tr class="top-song" ng-repeat="song in ::vm.populars | orderBy:params.sort | filter:params.query  as sortedTracks">
+                <td class="play-pause">
+                    <span class="sr-number" ng-if="!trackIsPlaying(song)">{{$index+1}}</span>
+                    <div id="bars" ng-if="trackIsPlaying(song)">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <i class="action-icon toggle-play" ng-class="{'icon-play-circle-outline':!trackIsPlaying(song), 'icon-pause-circle-outline':trackIsPlaying(song)}"></i>
+                </td>
+                <td class="title">
+                    {{song.name}}
+                </td>
+                <td class="artist">{{vm.user.username ? vm.user.username : vm.musician.name}}</td>
+                <td class="duration">
+                    {{song.duration ?  song.duration : '00:00'}}
+                </td>
+                <td>
+                    <md-icon class="logo-icon" md-font-icon="icon-dots-vertical"></md-icon>
+                </td>
+            </tr>
+            <tbody>
+        </table>
+    </div>
+
+    <div layout="column" layout-align="center center" ng-if="!vm.populars.length">
+        <div layout="column" layout-align="center center">
+            <div class="error-code"><md-icon class="logo-icon mr-8" md-font-icon="icon-music-note"></md-icon>You have not added singles</div>
+            <div class="message">Singles will appear here once you add some via 'Add to your singles' option from anywhere on the site. </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="music-title font-size-24">Albums</p>
+
+    <div layout="row" layout-wrap>
+        <md-card ng-repeat="album in vm.albums">
+            <div class="albums-image">
+                <md-icon class="logo-icon-more" md-font-icon="icon-dots-horizontal"></md-icon>
+                <md-backdrop class="md-sidenav-backdrop md-opaque ng-scope md-default-theme" style="position: absolute;"></md-backdrop>
+                <img ng-src={{album.image}} class="md-card-image album-img" height="250px">
+            </div>
+            <md-card-title layout="column">
+                <md-card-title-text>
+                    <span class="album-name">{{album.name}}</span>
+                </md-card-title-text>
+
+            </md-card-title>
+        </md-card>
+    </div>
+    <div layout="column" layout-align="center center" ng-if="!vm.albums.length">
+        <div layout="column" layout-align="center center">
+            <div class="error-code"><md-icon class="logo-icon mr-8" md-font-icon="icon-music-note"></md-icon>You have not added any albums</div>
+            <div class="message">Albums will appear here once you add some via 'Add to your albums' option from anywhere on the site. </div>
+        </div>
+    </div>
+</div>
+

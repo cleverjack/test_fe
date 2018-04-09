@@ -1,0 +1,35 @@
+<md-toolbar id="nav-top" class="navigation-header md-whiteframe-1dp" layout="row" layout-align="space-between center">
+  <img ng-src="{{$root.logoUrl}}" alt="LOGO" width="150px" height="50px">
+  <md-icon class="fold-toggle s18" md-font-icon="icon-backburger" hide show-gt-sm ng-click="vm.toggleMsNavigationFolded()"></md-icon>
+</md-toolbar>
+
+<ms-navigation class="scrollable" folded="vm.folded" ms-scroll="vm.msScrollOptions"></ms-navigation>
+<div class="scrollable ms-navigation ms-scroll ps-container ps-theme-default recorlable-sidenav" folded="vm.folded"  ms-scroll="vm.msScrollOptions">
+  <ul>
+    <li ng-repeat="node in vm.navigation"  class="has-children scrollable ms-navigation-node ms-scroll ps-container ps-theme-default">
+      <div class="ms-navigation-item" ng-if="!node.group">
+        <a class="ms-navigation-button" ui-sref="{{node.uisref}}" ui-sref-active="md-accent-bg"
+           ng-if="node.title && !node.type">
+          <i class="icon s16 {{node.icon}}" ng-if="node.icon"></i>
+          <span class="title" translate="{{node.translate}}" flex>{{node.title}}</span>
+          <span class="badge white-fg" ng-style="{'background': node.badge.color}" ng-if="node.badge">{{node.badge.content}}</span>
+        </a>
+        <a class="ms-navigation-button" ui-sref="{{node.uisref}}({id: node.params})" ui-sref-active="md-accent-bg"
+            ng-if="node.title && node.type">
+          <i class="icon s16 {{node.icon}}" ng-if="node.icon"></i>
+          <span class="title" translate="{{node.translate}}" flex>{{node.title}}</span>
+          <span class="badge white-fg" ng-style="{'background': node.badge.color}" ng-if="node.badge">{{node.badge.content}}</span>
+        </a>
+      </div>
+
+      <div layout="row" class="ms-navigation-item"  ng-if="node.group" ng-class="{'collapsed': vm.collapsed}">
+        <div class="ms-navigation-button" ng-click="vm.collapsed = !vm.collapsed" ng-if="node.action" style="cursor: pointer">
+          <i class="icon s16 {{node.icon}}" ng-if="node.icon"></i>
+          <span class="title" translate="{{node.translate}}" flex>{{node.title}}</span>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+</div>

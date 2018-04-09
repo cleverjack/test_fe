@@ -1,0 +1,71 @@
+#service_plan {
+    padding: 16px 12px;
+    .price-tables {
+        .price-table{
+            border-radius: 4px;
+            @media (max-width: $layout-breakpoint-xs) {
+                margin-right: 0px;
+            }
+        }
+        .price-table.style-3 {
+            .package-type {
+                padding: 24px;
+                .title {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #282c36;
+                }
+            }
+            .price {
+                padding: 24px 20px;
+                .period {
+                    opacity: 0.4;
+                }
+                .up-to {
+                    padding-left: 0px;
+                    padding-right: 8px;
+                }
+                .fans {
+                    padding-left: 8px;
+                }
+                hr {
+                    width: 100%;
+                    margin: 15px 0px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                }
+            }
+            .terms {
+                margin: 24px 20px;
+                .term {
+                    padding-bottom: 4px;
+                    font-size: 13px;
+                    line-height: 1.54;
+                    color: #787c84;
+                }
+                .super-term {
+                    font-size: 20px;
+                    padding-bottom: 0px;
+                }
+            }
+            .super-terms {
+                margin: 24px 20px;
+                height: 48px;
+            }
+            .cta-button {
+                margin: 0px 38px 24px;
+                font-size: 12px;
+                color: #FFFFFF;
+                border-radius: 2px;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+                text-transform: none;
+            }
+            .price-selected {
+                height: 60px;
+                padding: 10px 20px;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1.54;
+            }
+        }
+    }
+}

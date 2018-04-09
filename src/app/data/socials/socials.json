@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "title": "Facebook",
+            "font": "fa-facebook",
+            "class": "bg-blue"
+        },
+        {
+            "title": "Facebook Page",
+            "font": "fa-facebook",
+            "class": "bg-blue"
+        },
+        {
+            "title": "Twitter",
+            "font": "fa-twitter",
+            "class": "bg-grey"
+        },
+        {
+            "title": "Youtube",
+            "font": "fa-youtube",
+            "class": "bg-red"
+        },
+        {
+            "title": "Instagram",
+            "font": "fa-instagram",
+            "class": "bg-red-light"
+        },
+        {
+            "title": "Google",
+            "font": "fa-google",
+            "class": "bg-red"
+        }
+    ]
+}

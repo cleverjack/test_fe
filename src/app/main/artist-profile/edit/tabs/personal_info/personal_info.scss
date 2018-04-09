@@ -1,0 +1,42 @@
+#artist-edit-personal_info-musician {
+    padding-top: 22px;
+    .fist-input {
+        padding-left: 12px;
+        padding-right: 28px;
+    }
+    .location {
+        height: 58px;
+    }
+    .gender {
+        height: 94px;
+    }
+    .gender-text {
+        padding-top: 4px;
+        padding-bottom: 8px;
+        font-size: 1.3rem;
+        color: #787c84;
+        font-weight: bold;
+    }
+    md-radio-group.layout-row md-radio-button {
+        margin-right: 20px;
+    }
+    md-radio-button.md-default-theme .md-off, md-radio-button .md-off {
+        border-color: white;
+    }
+    md-radio-button.md-default-theme .md-on, md-radio-button .md-on {
+        background-color: white;
+    }
+    .btn-save {
+        width: 144px;
+        font-size: 12px;
+        text-transform: capitalize;
+        margin-right: 28px;
+        border-radius: 2px;
+        background-color: #7655a3;
+        color: #FFFFFF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+        md-icon {
+            color: #FFFFFF;
+        }
+    }
+}

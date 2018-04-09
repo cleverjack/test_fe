@@ -1,0 +1,76 @@
+{
+  "name": "work-environment",
+  "version": "1.4.5",
+  "dependencies": {
+    "angular": "1.5.11",
+    "angular-animate": "1.5.11",
+    "angular-aria": "1.5.11",
+    "angular-cookies": "1.5.11",
+    "angular-material": "1.1.3",
+    "angular-messages": "1.5.11",
+    "angular-resource": "1.5.11",
+    "angular-sanitize": "1.5.11",
+    "angular-translate": "2.13.0",
+    "angular-translate-loader-partial": "2.13.0",
+    "angular-ui-router": "0.3.2",
+    "jquery": "3.1.1",
+    "mobile-detect": "1.3.5",
+    "moment": "2.17.1",
+    "perfect-scrollbar": "0.6.14",
+    "lodash": "^4.17.4",
+    "angular-right-click": "^0.1.1",
+    "ngstorage": "^0.3.11",
+    "angular-youtube-mb": "^1.3.1",
+    "angular-datatables": "0.6.0",
+    "c3-angular": "1.3.1",
+    "ng-flow": "2.7.4",
+    "textAngular": "1.5.16",
+    "angular-google-maps": "2.3.2",
+    "angular-xeditable": "0.5.0",
+    "wip-image-zoom": "^0.1.6-beta",
+    "hammerjs": "^2.0.8",
+    "ngclipboard": "^1.1.1",
+    "ng-file-upload": "^12.2.13",
+    "angular-bootstrap": "^2.5.0",
+    "components-font-awesome": "^4.7.0",
+    "angular-click-outside": "^2.10.2",
+    "ng-csv": "^0.3.6",
+    "ngMeta": "^1.0.2",
+    "raven-js": "^3.21.0",
+    "angular-ui-sortable": "^0.18.0",
+    "ng-img-crop": "^0.3.2",
+    "Jcrop": "^2.0.4",
+    "angular-awesome-slider": "^2.4.4",
+    "angular-socialshare": "angularjs-socialshare#^2.3.11",
+    "satellizer": "^0.15.5",
+    "angular-recaptcha": "^4.1.2",
+    "angular-slick": "^0.2.1",
+    "ngAnalytics": "fly-analytics#^1.1.4",
+    "lightbox2": "lightbox#^2.10.0",
+    "ng-context-menu": "^1.0.3",
+    "angular-image-compress": "^0.1.5",
+    "wavesurfer-angular": "^1.0.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.11"
+  },
+  "resolutions": {
+    "angular": "1.5.11",
+    "d3": "3.5.14",
+    "moment": "2.17.1",
+    "jquery": ">=1.11.0"
+  },
+  "overrides": {
+    "angular-material": {
+      "main": [
+        "angular-material.js"
+      ]
+    },
+    "perfect-scrollbar": {
+      "main": [
+        "css/perfect-scrollbar.css",
+        "js/perfect-scrollbar.js"
+      ]
+    }
+  }
+}

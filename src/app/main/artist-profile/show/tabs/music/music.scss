@@ -1,0 +1,47 @@
+#artist-show-music-profile {
+    .music-title {
+        font-weight: 300;
+        margin: 40px 0px 12px 12px;
+    }
+    md-card {
+        margin: 12px 12px 20px;
+    }
+    .container {
+        .ms-responsive-table-wrapper {
+            padding: 0px 12px;
+            width: 100%;
+            table {
+
+                tbody {
+                    .drag-handle {
+                        cursor: move;
+                    }
+                    .title {
+                        min-width: 150px;
+                    }
+                    .artist {
+                        min-width: 150px;
+                    }
+                    .album {
+                        min-width: 150px;
+                    }
+                    .duration {
+                        min-width: 60px;
+                    }
+
+                    td {
+                        padding: 8px 8px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 404px) {
+            justify-content: center;
+        }
+    }
+    hr {
+        margin: 40px 12px;
+        border: solid 1px #22262f;
+    }
+}

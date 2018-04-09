@@ -1,0 +1,184 @@
+{
+"data":[
+    {
+        "_id": "58d6329a46568139a2441a90",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "TanyaMoses",
+        "first_name": "Vonda",
+        "last_name": "Avery",
+        "gender": "female",
+        "email": "vondaavery@mangelica.com"
+    },
+    {
+        "_id": "58d6329a9d3e773d42883efc",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "SteinMassey",
+        "first_name": "Elizabeth",
+        "last_name": "Glover",
+        "gender": "female",
+        "email": "elizabethglover@mangelica.com"
+    },
+    {
+        "_id": "58d6329a2b93c039bbf8c59c",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "HaleyReilly",
+        "first_name": "Cooley",
+        "last_name": "Bridges",
+        "gender": "male",
+        "email": "cooleybridges@mangelica.com"
+    },
+    {
+        "_id": "58d6329a6e8f6ca093323029",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "ElliottSerrano",
+        "first_name": "Keller",
+        "last_name": "Melton",
+        "gender": "male",
+        "email": "kellermelton@mangelica.com"
+    },
+    {
+        "_id": "58d6329af800d57fcd6a80fb",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "JulianaSanchez",
+        "first_name": "Patricia",
+        "last_name": "Joyner",
+        "gender": "female",
+        "email": "patriciajoyner@mangelica.com"
+    },
+    {
+        "_id": "58d6329ab59b724735b185c0",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "PerryAlexander",
+        "first_name": "Jeanne",
+        "last_name": "Carson",
+        "gender": "female",
+        "email": "jeannecarson@mangelica.com"
+    },
+    {
+        "_id": "58d6329ad39c7d0ec02c31b6",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "GloriaStuart",
+        "first_name": "Willie",
+        "last_name": "Hamilton",
+        "gender": "female",
+        "email": "williehamilton@mangelica.com"
+    },
+    {
+        "_id": "58d6329a411715798b09f88a",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "MariHines",
+        "first_name": "Clarke",
+        "last_name": "King",
+        "gender": "male",
+        "email": "clarkeking@mangelica.com"
+    },
+    {
+        "_id": "58d6329a2f1539965e433bbf",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "AmieDale",
+        "first_name": "Dollie",
+        "last_name": "Waller",
+        "gender": "female",
+        "email": "dolliewaller@mangelica.com"
+    },
+    {
+        "_id": "58d6329a79dd6005245bd105",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "BarreraWilder",
+        "first_name": "Barbara",
+        "last_name": "Parrish",
+        "gender": "female",
+        "email": "barbaraparrish@mangelica.com"
+    },
+    {
+        "_id": "58d6329a1c6708d84bceee9b",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "SalinasNguyen",
+        "first_name": "Dee",
+        "last_name": "Hebert",
+        "gender": "female",
+        "email": "deehebert@mangelica.com"
+    },
+    {
+        "_id": "58d6329a470617a95c325eb0",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "YolandaGood",
+        "first_name": "Monroe",
+        "last_name": "Humphrey",
+        "gender": "male",
+        "email": "monroehumphrey@mangelica.com"
+    },
+    {
+        "_id": "58d6329a595cb4265dbe9b45",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "CarrilloHendricks",
+        "first_name": "Whitney",
+        "last_name": "Mcmahon",
+        "gender": "male",
+        "email": "whitneymcmahon@mangelica.com"
+    },
+    {
+        "_id": "58d6329a7a6aad3a2d27fc09",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "KellieMccormick",
+        "first_name": "Belinda",
+        "last_name": "Estrada",
+        "gender": "female",
+        "email": "belindaestrada@mangelica.com"
+    },
+    {
+        "_id": "58d6329aa44928f618a8d1e6",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "NicholeLangley",
+        "first_name": "Osborne",
+        "last_name": "Mccall",
+        "gender": "male",
+        "email": "osbornemccall@mangelica.com"
+    },
+    {
+        "_id": "58d6329a7a41f0491fc0bcba",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "NewmanStrong",
+        "first_name": "Mcneil",
+        "last_name": "Blevins",
+        "gender": "male",
+        "email": "mcneilblevins@mangelica.com"
+    },
+    {
+        "_id": "58d6329a537a3d827f7f1abe",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "SusanneBeasley",
+        "first_name": "Megan",
+        "last_name": "Cortez",
+        "gender": "female",
+        "email": "megancortez@mangelica.com"
+    },
+    {
+        "_id": "58d6329acbaf4c341e98eaca",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "WebsterMurray",
+        "first_name": "Knapp",
+        "last_name": "Talley",
+        "gender": "male",
+        "email": "knapptalley@mangelica.com"
+    },
+    {
+        "_id": "58d6329acff8131074c0dfa7",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "DonnaRojas",
+        "first_name": "Christian",
+        "last_name": "Burns",
+        "gender": "male",
+        "email": "christianburns@mangelica.com"
+    },
+    {
+        "_id": "58d6329ac061b534f87ad0df",
+        "avatar": "/assets/images/avatars/profile.jpg",
+        "username": "LorieStanton",
+        "first_name": "Joyner",
+        "last_name": "Evans",
+        "gender": "male",
+        "email": "joynerevans@mangelica.com"
+    }
+]
+}

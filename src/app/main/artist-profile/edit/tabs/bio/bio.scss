@@ -1,0 +1,76 @@
+#artist-edit-bio-admin{
+  padding: 40px 12px;
+  position: relative;
+  @media (max-width: $layout-breakpoint-md) {
+      padding: 0px 12px;
+  }
+  md-sidenav {
+      background-color: transparent;
+      min-width: 320px;
+      @media (max-width: $layout-breakpoint-md) {
+          background-color: #22262f;
+      }
+      md-list {
+          padding: 0px;
+          md-list-item {
+              width: 320px;
+              min-height: 32px;
+              max-height: 32px;
+              border-radius: 4px 0px 0px 4px;
+              &:hover {
+                  width: 300px;
+                  background-color: #22262f;
+                  border-radius: 4px;
+                  color: #7655a3;
+                  md-icon {
+                      color: #7655a3;
+                      display: block;
+                  }
+              }
+              md-icon {
+                  display: none;
+              }
+              .md-button {
+                  max-height: 32px;
+                  min-height: 32px;
+                  padding: 4px 12px;
+                  &:hover, &:focus {
+                      background-color: transparent;
+                  }
+                  .md-list-item-inner {
+                      height: 32px;
+                  }
+              }
+              .new-text {
+                  display: block !important;
+                  margin: 0px 8px 0px 0px;
+                  color: #7655a3;
+              }
+          }
+          .selected {
+              background-color: #22262f;
+              padding-right: 20px;
+              &:hover {
+                  background-color: #22262f;
+                  width: 320px;
+              }
+          }
+      }
+  }
+  .main {
+      font-size: 13px;
+      line-height: 1.85;
+      border-radius: 0px 4px 4px;
+      background-color: #22262f;
+      p {
+          margin: 0px 0px 20px;
+      }
+  }
+  .btn-save {
+      width: 144px;
+      text-transform: capitalize;
+      border-radius: 2px;
+      background-color: #7655a3;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  }
+}

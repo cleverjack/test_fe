@@ -1,0 +1,91 @@
+<div id="landing-login" class="flex-scrollable" layout="column" ms-scroll>
+    <div id="login-form-wrapper" layout="column" layout-align="center center">
+        <div id="login-form" class="md-whiteframe-10dp">
+            <img ng-src="{{$root.logoUrl}}" width="100%" alt="logo">
+            <form name="loginForm" ng-submit="vm.login(vm.form)" novalidate>
+                <md-input-container class="md-block" md-no-float>
+                    <input type="email" name="email" ng-model="vm.form.email" placeholder="Email"
+                        ng-pattern="/^.+@.+\..+$/" required>
+                    <div ng-messages="loginForm.email.$error" role="alert" multiple>
+                        <div ng-message="required">
+                            <span>Email field is required</span>
+                        </div>
+                        <div ng-message="pattern">
+                            <span>Email must be a valid e-mail address</span>
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block" md-no-float>
+                    <input type="password" name="password" ng-model="vm.form.password" placeholder="Password"
+                        required>
+                    <div ng-messages="loginForm.password.$error" role="alert">
+                        <div ng-message="required">
+                            <span>Password field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+                <!-- <div ng-if="vm.errorMessage" class="error-message">
+                  {{vm.errorMessage}}
+                </div> -->
+                <div class="remember-forgot-password" layout="row" layout-xs="column"
+                    layout-align="space-between center">
+                    <md-checkbox class="remember-me" ng-model="data.cb1" aria-label="Remember Me">
+                        <span>Remember Me</span>
+                    </md-checkbox>
+
+                    <a class="forgot-password md-accent-color" ui-sref="app.forgot-password">Forgot Password?</a>
+
+                </div>
+
+                <p class="error">{{vm.errorMessage}}</p>
+
+                <md-button type="submit" class="md-raised md-accent submit-button" aria-label="LOG IN"
+                        ng-disabled="loginForm.$invalid || loginForm.$pristine"
+                        >
+                    LOG IN
+                </md-button>
+            </form>
+			<div class="register" layout="row" layout-sm="column" layout-align="center center">
+                <span class="text">Don't have an account?</span>
+                <a class="link" ui-sref="app.register" ng-click="vm.goMusicianRegister($event)">Create an account</a>
+            </div>
+
+            <div class="separator">
+                <span class="text">OR</span>
+            </div>
+            <md-button class="md-raised google" ng-click="vm.loginWithGoogle()">
+                <div layout="row" layout-align="center center">
+                <span>
+                    <md-icon md-font-icon="icon-google-plus" class="s16"></md-icon>
+                    <span>Log in with Google</span>
+                </span>
+                </div>
+            </md-button>
+            <md-button class="md-raised facebook" ng-click="vm.loginWithFacebook()">
+                <div layout="row" layout-align="center center">
+                <span>
+                    <md-icon md-font-icon="icon-facebook" class="s16"></md-icon>
+                    <span>Log in with Facebook</span>
+                </span>
+                </div>
+            </md-button>
+            <md-button class="md-raised twitter" ng-click="vm.loginWithTwitter()">
+                <div layout="row" layout-align="center center">
+                <span>
+                    <md-icon md-font-icon="icon-twitter" class="s16"></md-icon>
+                    <span>Log in with Twitter</span>
+                </span>
+                </div>
+            </md-button>
+            <md-button class="md-raised instagram" ng-click="vm.loginWithInstagram()">
+                <div layout="row" layout-align="center center">
+                <span>
+                    <md-icon md-font-icon="icon-instagram" class="s16"></md-icon>
+                    <span>Log in with Instagram</span>
+                </span>
+                </div>
+            </md-button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,245 @@
+.profile-header {
+  background-image: unset;
+  background-color: #191c21 !important;
+  height: 280px;
+  @media (max-width: $layout-breakpoint-md) {
+      height: 190px;
+  }
+  @media (max-width: $layout-breakpoint-sm) {
+      height: 460px;
+  }
+  @media (max-width: 600px) {
+      height: 600px;
+  }
+  min-height: 168px;
+  max-height: 600px;
+  width: 100%;
+  padding: 0px;
+
+  .cover-wrapper{
+    position: relative;
+    height: inherit;
+    width: 100%;
+
+    #coverImageForm{
+      position: absolute;
+      cursor: pointer;
+      left: 20px;
+      top: 5px;
+      color: grey;
+      z-index: 2;
+      &:hover{
+        color: #8461b4;
+        i{
+          color: #8461b4 !important;
+        }
+      }
+      .cover-edit-button{
+        display: flex;
+        .cover-edit-text{
+          padding-top: 4px;
+          padding-left: 4px;
+          font-size: 14px;
+        }
+      }
+    }
+    .cover-image-vertical-gradient{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #fff0, #fff0, #fff0, #fff0, #282c36);
+      z-index: 1;
+    }
+    .profile-cover{
+      position: relative;
+      height: inherit;
+      width: 790px;
+      margin: auto;
+      .cover-image-horizontal-gradient{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #191c21 , #fff0, #fff0, #fff0, #fff0, #191c21);
+      }
+    }
+  }
+
+
+
+  .user-image{
+      position: absolute;
+      overflow: hidden;
+      top: 50px;
+      left: 50px;
+      padding: 7px;
+      .profile-image {
+          height: 100%;
+          width: 220px;
+          border-radius: 110px;
+          z-index: 100;
+          border: 2px solid white;
+          padding-top: unset;
+
+      }
+      &:before {
+          font-family: 'Roboto';
+          speak: none;
+          font-style: normal;
+          font-size: 13px;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          content: "Change Avatar";
+          color: #FFFFFF;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          display: none;
+      }
+      &:hover {
+          &:before {
+              display: block;
+              z-index: 150;
+          }
+          img {
+              -webkit-filter: blur(4px);
+              -moz-filter: blur(4px);
+              -o-filter: blur(4px);
+              -ms-filter: blur(4px);
+              filter: blur(4px);
+          }
+      }
+  }
+
+  .user-info {
+    position: absolute;
+      // margin-left: 40px;
+      left: 300px;
+      top: 85px;
+      z-index: 100;
+      @media (max-width: 600px) {
+          margin-left: 0px;
+      }
+      .name {
+          font-size: 28px;
+          margin: 8px 0px;
+      }
+      .country {
+          font-size: 13px;
+          margin-bottom: 10px;
+      }
+      .star-ratings-css {
+          margin-right: 20px;
+      }
+      .share {
+          display: flex;
+          align-items: center;
+          height: 32px;
+          a {
+              font-size: 15px;
+              text-decoration: none;
+              color: #8461b4 !important;
+              border-left: 1px solid;
+              i {
+                  font-size: 15px;
+                  color: #8461b4 !important;
+                  margin-left: 20px;
+                  margin-right: 10px;
+              }
+              md-icon {
+                  color: #8461b4 !important;
+              }
+              @media (max-width: $layout-breakpoint-md) {
+                  border-left: none;
+                  i {
+                      margin-left: 0px;
+                  }
+              }
+          }
+      }
+      .gallery {
+        padding: 40px 0px;
+        margin-left: -8px;
+        @media (max-width: 1160px) {
+            position: absolute;
+            top: 186px;
+        }
+        @media (max-width: $layout-breakpoint-sm) {
+            position: relative;
+            top: unset;
+            padding: 20px 0px;
+            margin-left: 0px;
+        }
+        .preview {
+            width: 32px;
+            height: 32px;
+            margin: 0px 8px;
+            border-radius: 4px;
+        }
+
+        .empty-gallery{
+          text-align: center;
+          padding-top: 3px;
+          border: 1px dotted #7655a3;
+          color: #7655a3;
+          width: 32px;
+          height: 32px;
+          margin: 0px 8px;
+          border-radius: 4px;
+        }
+
+        md-icon{
+          color: #7655a3
+        }
+      }
+  }
+  .user-state {
+      position: absolute;
+      right: 40px;
+      top: 75px;
+      @media (max-width: 1160px) {
+          position: relative;
+          right: unset;
+      }
+      .info {
+          width: 120px;
+          margin-top: 12px;
+      }
+      .albums {
+          border-left: 2px solid #282c36;
+          border-right: 2px solid #282c36;
+          height: 32px;
+      }
+      p {
+          margin: 0px;
+          font-weight: 300;
+      }
+      .number {
+          font-size: 24px;
+      }
+      .title {
+          font-size: 13px;
+      }
+      .buttons {
+          margin-top: 38px;
+          @media (max-width: $layout-breakpoint-md) {
+              margin-top: 60px;
+          }
+      }
+      .md-button {
+          text-transform: capitalize;
+          font-size: 12px;
+          width: 144px;
+          border-radius: 2px;
+          background-color: #7655a3;
+          color: #ffffff;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+          md-icon {
+              color: #FFFFFF;
+              margin-right: 8px;
+              margin-top: -1px;
+          }
+      }
+  }
+}

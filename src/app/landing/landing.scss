@@ -1,0 +1,211 @@
+#landing-page {
+    .header {
+        //position: fixed;
+        height: 136px;
+        z-index: 100;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+    .header {
+        padding: 32px 150px;
+        @media (max-width: 900px) {
+            padding: 32px 0px;
+        }
+        img {
+            width: auto;
+            height: 72px;
+        }
+        .md-button {
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: none;
+        }
+        .signup {
+            border-radius: 4px;
+            background-color: #7655a3;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        }
+        md-menu {
+            margin-right: 0px;
+        }
+    }
+    md-content {
+        margin-top: -136px;
+        .top-content {
+            position: relative;
+            overflow: hidden;
+            // height: 702px;
+            height: 100vh;
+            .top-content-image {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                img {
+                  height: 100%;
+                  width: 100%;
+                  min-height: 100%;
+                  position: relative;
+                  max-width: inherit;
+                }
+                @media (max-width: 1209px) {
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        min-height: 100%;
+                        position: relative;
+                        max-width: inherit;
+                    }
+                }
+            }
+            .top-content-item {
+                z-index: 1;
+                position: relative;
+                margin-top: 280px;
+
+                padding: 0px 30px;
+                text-align: center;
+                .grand-title{
+                  margin: 0px;
+                  // font-family: fantasy;
+                  font-size : 100px;
+                  // letter-spacing: 15px;
+                }
+                .Its-About-the-Music {
+                    font-size: 50px;
+                    margin-bottom: 8px;
+                }
+                .Follow-your-favorite {
+                    font-size: 35px;
+                    margin-top: 8px;
+                    margin-bottom: 40px;
+                }
+                .get-started {
+                    width: 300px;
+                    height: 56px;
+                    border-radius: 4px;
+                    background-color: #7655a3;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+                    margin-top: 40px;
+                }
+            }
+
+            @media (max-width: 985px) {
+              .top-content-item{
+                margin-top: 115px;
+                .grand-title{
+                  margin: 0px;
+                  // font-family: fantasy;
+                  font-size : 45px;
+                  margin-bottom: 80px;
+                  letter-spacing: 0px;
+                }
+
+                .Its-About-the-Music {
+                  font-size: 30px;
+                  margin-bottom: 8px;
+                }
+                .Follow-your-favorite {
+                    font-size: 25px;
+                    margin-top: 8px;
+                    margin-bottom: 40px;
+                }
+              }
+            }
+        }
+        .more {
+            padding: 80px 150px;
+            @media (max-width: 980px) {
+                padding: 80px 0px;
+            }
+            .Look-whos-here {
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+                margin: 0px;
+            }
+            .discover-new-music{
+                font-size: 40px;
+                // font-family: monospace;
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 80px;
+            }
+            .Sign-Up-to-Get-More {
+                width: 300px;
+                height: 56px;
+                border-radius: 4px;
+                background-color: #7655a3;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+                margin-top: 40px;
+            }
+        }
+        .new {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 80px 150px;
+            @media (max-width: 980px) {
+                padding: 80px 0px;
+            }
+            background-color: #22262f;
+            .New-this-Week {
+              font-size: 60px;
+              font-weight: bold;
+              text-align: center;
+              margin: 0px;
+            }
+            .playlists-sub {
+              font-size: 40px;
+              // font-family: monospace;
+              text-align: center;
+              margin-top: 0px;
+              margin-bottom: 40px;
+            }
+            .Sign-Up-to-Get-More {
+                width: 300px;
+                height: 56px;
+                margin-top: 135px;
+                margin-bottom: 18px;
+                border-radius: 4px;
+                background-color: #7655a3;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+    .footer {
+        background-color: #191c21 !important;
+        padding: 80px 150px;
+        @media (max-width: 900px) {
+            padding: 32px 24px;
+            .footer-text {
+                text-align: center;
+            }
+        }
+        .title {
+            font-size: 20px;
+            margin: 0px;
+        }
+        md-icon {
+            color: white;
+            font-size: 36px;
+            margin-right: 20px;
+            margin-top: 36px;
+            margin-bottom: 36px;
+        }
+        .footer-title {
+            color: #8d939d;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .footer-text {
+            margin-right: 30px;
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

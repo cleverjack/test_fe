@@ -1,0 +1,72 @@
+<div id="account-setting-admin">
+  <form name="accountForm" novalidate>
+    <div layout="row" layout-align="space-between start" flex="100" layout-wrap>
+      <div class="section" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+        <md-input-container>
+          <label>Username</label>
+          <input type="text" name="usertname" ng-model="vm.form.username" required>
+          <div ng-messages="accountForm.firstname.$error" role="alert">
+            <div ng-message="required">
+              <span>Username field is required</span>
+            </div>
+          </div>
+        </md-input-container>
+      </div>
+      <div class="section" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+        <md-input-container>
+          <label>Email</label>
+          <input type="text" name="email" ng-model="vm.form.email" required>
+          <div ng-messages="accountForm.email.$error" role="alert">
+            <div ng-message="required">
+              <span>Email field is required</span>
+            </div>
+          </div>
+        </md-input-container>
+      </div>
+      <div class="section" layout="column" flex="100" flex-gt-xs="100" flex-gt-md="50">
+        <label class="sec-label">Security Question</label>
+        <p class="sec-text">Enter security question in case you lose access to your account. Be sure to pick questions that you well remember the answers to.</p>
+        <md-input-container>
+          <label>What was the name of your first stuffed animal?</label>
+          <input type="text" name="animal" ng-model="vm.form.animal" required>
+          <div ng-messages="accountForm.animal.$error" role="alert">
+            <div ng-message="required">
+              <span>This field is required</span>
+            </div>
+          </div>
+        </md-input-container>
+        <md-input-container>
+          <label>What is your grandfather’s first name?</label>
+          <input type="text" name="grandfather" ng-model="vm.form.grandfather" required>
+          <div ng-messages="accountForm.grandfather.$error" role="alert">
+            <div ng-message="required">
+              <span>This field is required</span>
+            </div>
+          </div>
+        </md-input-container>
+        <md-input-container>
+          <label>In what city your grandmother live?</label>
+          <input type="text" name="grandmother" ng-model="vm.form.grandmother" required>
+          <div ng-messages="accountForm.grandmother.$error" role="alert">
+            <div ng-message="required">
+              <span>This field is required</span>
+            </div>
+          </div>
+        </md-input-container>
+        <div layout="row" layout-align="end center">
+          <md-button class="change-password" ng-click="">
+            <span class="fa-passwd-reset fa-stack">
+              <i class="fa fa-undo fa-stack-2x"></i>
+              <i class="fa fa-lock fa-stack-1x"></i>
+            </span>
+            Change Password
+          </md-button>
+          <md-button class="md-raised btn-save" ng-click="">
+            <md-icon md-font-icon="icon-content-save" class="s16"></md-icon>
+            Save
+          </md-button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,53 @@
+#account-setting-admin {
+  padding-top: 22px;
+  .section {
+      padding-left: 12px;
+      padding-right: 28px;
+  }
+  .sec-label {
+      font-size: 1.3rem;
+      color: #787c84;
+      font-weight: bold;
+  }
+  .sec-text {
+      margin: 12px 0px;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  .md-button {
+      width: 144px;
+      font-size: 12px;
+      text-transform: capitalize;
+  }
+  .btn-save {
+      margin-right: 0px;
+      border-radius: 2px;
+      background-color: #7655a3;
+      color: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+      md-icon {
+          color: #FFFFFF;
+          margin-right: 8px;
+          margin-top: -3px;
+      }
+  }
+  .change-password {
+      &:hover {
+          background-color: transparent;
+      }
+      margin-right: 8px;
+      color: #8461b4;
+      //md-icon {
+      //    color: #8461b4;
+      //    margin-right: 8px;
+      //    margin-top: -3px;
+      //}
+      .fa-stack {
+          margin-right: 8px;
+          margin-top: -3px;
+          .fa-undo {
+              -webkit-text-stroke: 2px #282c36;
+          }
+      }
+  }
+}

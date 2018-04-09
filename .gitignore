@@ -1,0 +1,12 @@
+node_modules/
+bower_components/
+coverage/
+package-lock.json
+.DS_Store
+npm-debug.log
+.idea
+*.iml
+test/tmp
+.tmp/
+dist/
+src/app/landing/landing.html.rej

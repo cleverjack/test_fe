@@ -1,0 +1,30 @@
+<div id="artist-edit-payment_info-musician">
+    <form name="paymentForm" ng-submit="" novalidate>
+        <div class="payment-title">
+            <p class="m-0 font-size-12">To recive direct payments from your fans</p>
+            <p class="m-0 mb-40 font-size-18">Please enter your Paypal payment information</p>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter the Email address associated with your Paypal account</label>
+                    <input type="text" name="paymentaddress" ng-model="vm.form.paymentaddress" ng-pattern="/^.+@.+\..+$/" ng-disabled="vm.paymentconnected" required>
+                    <div ng-messages="paymentForm.paymentaddress.$error" role="alert">
+                        <div ng-message="required">
+                            <span>Website field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="end center" layout-wrap>
+            <md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)">
+                <!--<md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)">-->
+                <md-icon ng-if="!vm.paymentconnected" md-font-icon="icon-plus-circle-outline" class="s16"></md-icon>
+                <md-icon ng-if="vm.paymentconnected" md-font-icon="icon-minus-circle-outline" class="s16"></md-icon>
+                <span ng-if="!vm.paymentconnected">Connect Account</span>
+                <span ng-if="vm.paymentconnected">Disconnect Account</span>
+            </md-button>
+        </div>
+    </form>
+</div>

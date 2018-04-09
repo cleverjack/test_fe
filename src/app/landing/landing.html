@@ -1,0 +1,84 @@
+<div id="landing-page">
+	<md-toolbar class="md-menu-toolbar md-whiteframe-1dp header">
+		<div class="header" layout="row" layout-align="start center">
+			<div flex layout="row" layout-align="end center">
+				<div hide show-gt-sm class="toolbar-separator"></div>
+				<md-button hide show-gt-sm class="login" aria-label="login"
+						   ng-click="vm.goToSignInPage($event)">Log In
+				</md-button>
+				<md-button hide show-gt-sm class="signup" aria-label="signup">
+          Sign Up
+				</md-button>
+				<md-menu hide-gt-sm aria-label="Toggle navigation">
+					<md-button class="toggleMenu" ng-click="$mdMenu.open()" aria-label="more">
+						<i class="fa fa-bars"></i>
+					</md-button>
+					<md-menu-content width="3">
+						<md-menu-item>
+							<md-button aria-label="Refresh widget" ng-click="vm.goToSignInPage($event)">
+								<p>Log In</p>
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button aria-label="Refresh widget">
+								<p>Sign Up</p>
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+			</div>
+		</div>
+	</md-toolbar>
+	<md-content class="animate-slide-up">
+		<div class="top-content">
+			<div class="top-content-image">
+				<img class="content-image" ng-src="/assets/images/backgrounds/header-image.jpg" alt="logo">
+			</div>
+			<div class="top-content-item" layout="column" layout-align="center center">
+        		<p class="grand-title">Stream. Support. Share.</p>
+				<p class="Its-About-the-Music">DEMO</p>
+				<p class="Follow-your-favorite">A Fan Supported Streaming Platform</p>
+				<md-button class="get-started" ng-click="vm.goToNow($event)">Get Started</md-button>
+			</div>
+		</div>
+		<div class="more" layout="column" layout-align="center center">
+		    <p class="Look-whos-here">Follow Popular Artists</p>
+		    <p class="discover-new-music">Discover New Music</p>
+			<div layout="row" layout-wrap layout-align="center center">
+
+			</div>
+			<md-button class="Sign-Up-to-Get-More">Sign Up to Get More</md-button>
+		</div>
+		<div class="new">
+			<p class="New-this-Week">Create and Share Playlists</p>
+			<p class="playlists-sub">While Supporting the Arts</p>
+
+			<md-button class="Sign-Up-to-Get-More">Sign Up to Get More</md-button>
+		</div>
+	</md-content>
+	<md-toolbar class="md-menu-toolbar md-whiteframe-1dp footer">
+		<div layout="row" layout-xs="column" layout-align-xs="center center">
+			<div flex class="footer-text">
+				<p class="title">DEMO</p>
+				<md-icon md-font-icon="icon-google-plus-box"></md-icon>
+				<md-icon md-font-icon="icon-facebook-box"></md-icon>
+				<md-icon md-font-icon="icon-twitter-box"></md-icon>
+			</div>
+			<div flex layout="column" class="footer-text">
+				<p class="footer-title">Information</p>
+				<a>Terms of service</a>
+				<a>Privacy</a>
+			</div>
+			<div flex layout="column" class="footer-text">
+				<p class="footer-title">Artist Registration</p>
+				<a>Artist Entrance</a>
+				<a>Record Labels</a>
+			</div>
+			<div flex layout="column" class="footer-text">
+				<p class="footer-title">Apps</p>
+				<a>App Store</a>
+				<a>Google Play</a>
+			</div>
+		</div>
+	</md-toolbar>
+</div>

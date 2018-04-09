@@ -1,0 +1,69 @@
+[{
+    "group": true,
+    "title": "Popular",
+    "uisref": "",
+    "weight": 1,
+    "children": [{
+        "children": [],
+        "icon": "icon-thumb-up",
+        "state": "app.albums",
+        "title": "Popular Albmus",
+        "uisref": "app.albums",
+        "weight": 1
+    }, {
+        "children": [],
+        "icon": "icon-tag-multiple",
+        "state": "app.genres",
+        "title": "Popular Genres",
+        "uisref": "app.genres",
+        "weight": 2
+    }, {
+        "children": [],
+        "icon": "icon-fire",
+        "state": "app.top50",
+        "title": "Top 50",
+        "uisref": "app.top50",
+        "weight": 3
+    }, {
+        "children": [],
+        "icon": "icon-disk-alert",
+        "state": "app.newReleases",
+        "title": "Top 50",
+        "uisref": "app.newReleases",
+        "weight": 3
+    }]
+}, {
+    "group": true,
+    "title": "YOUR MUSIC",
+    "uisref": "",
+    "weight": 2,
+    "children": [{
+        "children": [],
+        "icon": "icon-music-note",
+        "state": "app.songs",
+        "title": "Songs",
+        "uisref": "app.songs",
+        "weight": 1
+    }, {
+        "children": [],
+        "icon": "icon-tag-multiple",
+        "state": "app.genres",
+        "title": "Albums",
+        "uisref": "app.genres",
+        "weight": 2
+    }, {
+        "children": [],
+        "icon": "icon-fire",
+        "state": "app.top50",
+        "title": "Top 50",
+        "uisref": "app.top50",
+        "weight": 3
+    }, {
+        "children": [],
+        "icon": "icon-disk-alert",
+        "state": "app.newReleases",
+        "title": "Top 50",
+        "uisref": "app.newReleases",
+        "weight": 3
+    }]
+}]

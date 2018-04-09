@@ -1,0 +1,29 @@
+<div id="">
+    <md-content flex ms-scroll class="padding-15">
+
+        <!-- IMAGES LIST-->
+        <div class="about-images">
+            <div class="individual-image" ng-repeat="image in vm.aboutImages">
+                <md-icon class="logo-icon-delete" md-font-icon="icon-trash" ng-click="vm.deleteAboutImage($event, image)"></md-icon>
+                <img ng-src="{{image.url}}">
+            </div>
+            <div ngf-select ng-model="vm.aboutImage" class="add-image">
+                <md-icon class="logo-icon-delete" md-font-icon="icon-plus-circle-outline"></md-icon>
+            </div>
+        </div>
+        <!-- / IMAGES LIST-->
+        <div>
+            <md-button class="md-fab md-primary md-mini action-icon" aria-label="share" id="share-selected" ng-click="vm.isEdit = !vm.isEdit" ng-disabled="vm.isEdit">
+                <i class="icon icon-pencil"></i>
+                <md-tooltip md-direction="top">Edit Description</md-tooltip>
+            </md-button>
+        </div>
+        <div class="description" ng-if="!vm.isEdit">
+            <span>{{vm.aboutDescription}}</span>
+        </div>
+        <div class="description" ng-if="vm.isEdit" click-outside="vm.saveDescription()">
+            <textarea ng-model="vm.aboutDescription"></textarea>
+        </div>
+
+    </md-content>
+</div>

@@ -1,0 +1,740 @@
+<div id="dashboard">
+    <div class="header-title" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+        <div class="left">
+            <p class="title">Income and Outcome</p>
+        </div>
+        <div class="right">
+            <a href="#">Last Week</a>
+            <a href="#">Last Month</a>
+            <a href="#">Last Year</a>
+        </div>
+    </div>
+    <div class="widget-group" layout="row" layout-align="space-between center" flex="100" layout-wrap>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 teal-400-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-arrow-up"></md-icon>
+                        <div class="h3">Gross Projection</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1">$55,121</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 teal-400-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text teal-400-fg">+2%</p>
+                </div>
+            </div>
+        </ms-widget>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 blue-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-credit-card"></md-icon>
+                        <div class="h3">Paypal Fee</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1">$1,537</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 blue-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">lower than average</p>
+                </div>
+                <div class="right">
+                    <p class="text blue-fg">-3%</p>
+                </div>
+            </div>
+        </ms-widget>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 service-fee white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-credit-card"></md-icon>
+                        <div class="h3">Oohyah Service Fee</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1">$1,598.81</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 service-fee white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text service-fee-fg">+3%</p>
+                </div>
+            </div>
+        </ms-widget>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 pink-400-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-diamond"></md-icon>
+                        <div class="h3">Net Income</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1">$51,923.38</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 pink-400-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text pink-400-fg">+3%</p>
+                </div>
+            </div>
+        </ms-widget>
+    </div>
+    <hr>
+
+    <div class="header-title" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+        <div class="left">
+            <p class="title">Conversion</p>
+        </div>
+        <div class="right">
+            <a href="#">Last Week</a>
+            <a href="#">Last Month</a>
+            <a href="#">Last Year</a>
+        </div>
+    </div>
+    <div class="widget-group" layout="row" layout-align="space-between center" flex="100" layout-wrap>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="100" flex-gt-md="50">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 teal-400-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-account-multiple"></md-icon>
+                        <div class="h3">Total Visits</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1 h1-center">5,635</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 teal-400-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text teal-400-fg">+10%</p>
+                </div>
+            </div>
+        </ms-widget>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="100" flex-gt-md="50">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 blue-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-account-switch"></md-icon>
+                        <div class="h3">Conversion Rate</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1 h1-center">$3,234</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 blue-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text blue-fg">+15%</p>
+                </div>
+            </div>
+        </ms-widget>
+    </div>
+    <hr>
+
+    <div class="header-title" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+        <div class="left">
+            <p class="title">Social Marketing</p>
+        </div>
+        <div class="right">
+            <a href="#">Last Week</a>
+            <a href="#">Last Month</a>
+            <a href="#">Last Year</a>
+        </div>
+    </div>
+    <div class="widget-group" layout="row" layout-align="space-between center" flex="100" layout-wrap>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="100" flex-gt-md="50">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 indigo-400-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-facebook-box"></md-icon>
+                        <div class="h3">Facebook</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1 h1-center">3,468</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 indigo-400-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text indigo-400-fg">+43%</p>
+                </div>
+            </div>
+        </ms-widget>
+        <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="100" flex-gt-md="50">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 blue-bg white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-twitter-box"></md-icon>
+                        <div class="h3">Twitter</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1 h1-center">2,667</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 blue-bg white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">lower than average</p>
+                </div>
+                <div class="right">
+                    <p class="text blue-fg">+72%</p>
+                </div>
+            </div>
+        </ms-widget>
+    </div>
+    <hr>
+
+    <div class="header-title" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+        <div class="left">
+            <p class="title">Subscribers</p>
+        </div>
+        <div class="right">
+            <a href="#">Last Week</a>
+            <a href="#">Last Month</a>
+            <a href="#">Last Year</a>
+        </div>
+    </div>
+    <div class="widget-group" layout="row" layout-align="space-between center" flex="100" layout-wrap>
+        <ms-widget flippable="true" layout="column" flex="100">
+
+            <!-- Front -->
+            <ms-widget-front class="p-16 service-fee white-fg">
+                <div class="pb-20" layout="row" layout-align="space-between center">
+                    <div></div>
+                    <div layout="row" layout-align="start center">
+                        <md-icon class="m-0 mr-8" md-font-icon="icon-account-check"></md-icon>
+                        <div class="h3">Subscribers</div>
+                    </div>
+
+                    <md-menu>
+                        <md-button aria-label="more" class="md-icon-button"
+                                   ng-click="$mdMenu.open($event)">
+                            <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                        </md-button>
+                        <md-menu-content width="2">
+                            <md-menu-item>
+                                <md-button ng-click="flipWidget()" aria-label="Flip widget">
+                                    Details
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="refreshWidget()" aria-label="Refresh widget">
+                                    Refresh
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div class="pb-8 h1 h1-center">10,6 K</div>
+
+                <div class="chart-fill-16">
+                    <nvd3 class="h-50 remove-opacity remove-line-stroke"
+                          config="vm.widget4.chart.config"
+                          options="vm.widget4.chart.options"
+                          data="vm.widget4.chart.data"></nvd3>
+                </div>
+            </ms-widget-front>
+            <!-- / Front -->
+
+            <!-- Back -->
+            <ms-widget-back class="p-16 pr-32 service-fee white-fg">
+                <div class="flip-to-front">
+                    <md-button class="md-icon-button" ng-click="flipWidget()" aria-label="Flip widget">
+                        <md-icon md-font-icon="icon-close" class="s16"></md-icon>
+                    </md-button>
+                </div>
+
+                <div>
+                    This is the back side. You can show detailed information here.
+                </div>
+            </ms-widget-back>
+            <!-- / Back -->
+            <div class="widget-bottom" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end">
+                <div class="left">
+                    <p class="text">above than average</p>
+                </div>
+                <div class="right">
+                    <p class="text service-fee-fg">+10%</p>
+                </div>
+            </div>
+        </ms-widget>
+    </div>
+
+
+
+
+    <!--<div class="content" layout="row" layout-xs="column" layout-wrap layout-margin align="center">-->
+            <!---->
+        <!--&lt;!&ndash; </div> &ndash;&gt;-->
+        <!--<div class="" flex="100" flex-gt-xs="15">-->
+            <!--<a class="ms-navigation-button" ng-click="vm.openDetail($event)">-->
+                <!--<md-card align="center" style="vertical-align: center">-->
+                    <!---->
+                    <!--<div class="item-container">-->
+                        <!--<img src="assets/icons/icons/edit-find-replace-128.png" width="90px" style="margin: auto">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--&lt;!&ndash; <span class="info-box-icon bg-pink" align=center><i class="fa fa-picture-o"></i></span> &ndash;&gt;-->
+                    <!--<md-card-title layout="column">-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="album-name">Artist Detail</span>-->
+                    <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                <!--</md-card>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="" flex="100" flex-gt-xs="15">-->
+            <!--<a class="ms-navigation-button" ng-click="vm.selectPhotoType($event)">-->
+                <!--<md-card align="center">-->
+                    <!---->
+                    <!--<div class="item-container">-->
+                        <!--<img src="assets/icons/icons/Photography-128.png"  width="90px" style="margin: auto">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--&lt;!&ndash; <span class="info-box-icon bg-red" align=center><i class="fa fa-camera-retro"></i></span> &ndash;&gt;-->
+                    <!--<md-card-title layout="column">-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="album-name">Artist Photos</span>-->
+                    <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                <!--</md-card>-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--<div class="" flex="100" flex-gt-xs="15">-->
+            <!--<a class="ms-navigation-button" ng-click="vm.selectMusicType($event)">-->
+                <!--<md-card align="center">-->
+                    <!--<div class="item-container">-->
+                        <!--<img src="assets/icons/icons/volume-128.png"  width="90px" style="margin: auto">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--&lt;!&ndash; <span class="info-box-icon bg-red" align=center><i class="fa fa-camera-retro"></i></span> &ndash;&gt;-->
+                    <!--<md-card-title layout="column">-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="album-name">Artist Music</span>-->
+                    <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                <!--</md-card>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="" flex="100" flex-gt-xs="15">-->
+            <!--<a class="ms-navigation-button" ng-click="vm.openSocial($event)">-->
+                <!--<md-card align="center">-->
+                    <!---->
+                    <!--<div class="item-container">-->
+                        <!--<img src="assets/icons/icons/social_cloud-128.png"  width="110px" style="margin: auto">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--&lt;!&ndash; <span class="info-box-icon bg-red" align=center><i class="fa fa-camera-retro"></i></span> &ndash;&gt;-->
+                    <!--<md-card-title layout="column">-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="album-name">Social Networks</span>-->
+                    <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                <!--</md-card>-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--<div class="" flex="100" flex-gt-xs="15">-->
+            <!--&lt;!&ndash; ui-sref="app.musician.upload-music" &ndash;&gt;-->
+            <!--<a class="ms-navigation-button" ng-click="vm.openPaid($event)">-->
+                <!--<md-card align="center">-->
+                    <!--<div class="item-container">-->
+                        <!--<img src="assets/icons/icons/payment_method_paypal-128.png"  width="90px" style="margin: auto; padding-top: 20px">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--&lt;!&ndash; <span class="info-box-icon bg-aqua" align=center><i class="fa fa-music"></i></span> &ndash;&gt;-->
+                    <!--<md-card-title layout="column">-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="album-name">Get Paid</span>-->
+                    <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                <!--</md-card>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="" flex="100" flex-gt-xs="15">-->
+            <!--<a class="ms-navigation-button" ng-click="vm.openFans($event)">-->
+                <!--<md-card align="center">-->
+                    <!---->
+                    <!--<div class="item-container">-->
+                        <!--<img src="assets/icons/icons/Fans-128.png"  width="90px" style="margin: auto">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--&lt;!&ndash; <span class="info-box-icon bg-yellow" align=center><i class="fa fa-users"></i></span> &ndash;&gt;-->
+                    <!--<md-card-title layout="column">-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="album-name">Fans</span>-->
+                    <!--</md-card-title-text>-->
+                    <!--</md-card-title>-->
+                <!--</md-card>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>

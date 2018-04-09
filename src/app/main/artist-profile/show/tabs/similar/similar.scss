@@ -1,0 +1,37 @@
+#artist-show-similar-profile {
+    .similar-title {
+        font-weight: 300;
+        margin: 40px 0px 12px 12px;
+    }
+    .albums-image {
+        border-radius: 50%;
+        md-backdrop, img {
+            border-radius: 50%;
+        }
+        .add-cicle-text {
+            display: none;
+            position: absolute;
+            text-align: center;
+            font-size: 16px;
+            top: 50%;
+            width: 100%;
+        }
+        &:hover {
+            .add-cicle-text {
+                display: block;
+                z-index: 1;
+            }
+        }
+        &:before {
+            display: none;
+        }
+    }
+    md-card {
+        margin: 12px 12px 20px;
+    }
+    .container {
+        @media (max-width: 404px) {
+            justify-content: center;
+        }
+    }
+}

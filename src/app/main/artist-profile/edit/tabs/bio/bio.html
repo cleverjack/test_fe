@@ -1,0 +1,74 @@
+<div id="artist-edit-bio-admin">
+    <div layout="row">
+      <md-sidenav class="sidenav" md-is-locked-open="$mdMedia('gt-md')" md-component-id="sidenav">
+
+        <div ms-scroll class="scrollable">
+
+          <md-list md-no-ink>
+
+            <md-list-item ng-click="vm.showChange('history')" ng-class="{'selected':vm.listType ==='history'}">
+              <p class="font-size-14">History</p>
+              <md-icon md-font-icon="icon-pencil s18"></md-icon>
+              <md-icon class="margin-left-8" md-font-icon="icon-delete s18"></md-icon>
+            </md-list-item>
+
+            <md-list-item ng-click="vm.showChange('style')" ng-class="{'selected':vm.listType ==='style'}">
+              <p class="font-size-14">Musical style and legacy</p>
+              <md-icon md-font-icon="icon-pencil s18"></md-icon>
+              <md-icon class="margin-left-8" md-font-icon="icon-delete s18"></md-icon>
+            </md-list-item>
+
+            <md-list-item ng-click="vm.showChange('member')" ng-class="{'selected':vm.listType ==='member'}">
+              <p class="font-size-14">Band members</p>
+              <md-icon md-font-icon="icon-pencil s18"></md-icon>
+              <md-icon class="margin-left-8" md-font-icon="icon-delete s18"></md-icon>
+            </md-list-item>
+
+            <md-list-item ng-click="vm.showChange('new')" ng-class="{'selected':vm.listType ==='new'}">
+              <md-icon class="new-text" md-font-icon="icon-plus-circle-outline s18"></md-icon>
+              <p class="new-text">Add New Section</p>
+            </md-list-item>
+
+          </md-list>
+
+        </div>
+
+      </md-sidenav>
+      <div layout="column" layout-align="center end">
+        <div class="main p-32" ng-if="vm.listType == 'history'">
+          <p class="font-size-24">History</p>
+          <span class="container">
+          Foo Fighters is an American rock band, formed in Seattle, Washington in 1994. It was founded by Nirvana drummer Dave Grohl as a one-man project following the dissolution of Nirvana after the death of Kurt Cobain. The group got its name from the UFOs and various aerial phenomena that were reported by Allied aircraft pilots in World War II, which were known collectively as "foo fighters".
+
+          Prior to the release of Foo Fighters' 1995 debut album Foo Fighters, which featured Grohl as the only official member, Grohl recruited bassist Nate Mendel and drummer William Goldsmith, both formerly of Sunny Day Real Estate, as well as Nirvana touring guitarist Pat Smear to complete the lineup. The band began with performances in Portland, Oregon. Goldsmith quit during the recording of the group's second album, The Colour and the Shape (1997), when most of the drum parts were re-recorded by Grohl himself. Smear's departure followed soon afterward, though he would rejoin them in 2006.
+
+          They were replaced by Taylor Hawkins and Franz Stahl, respectively, although Stahl was fired before the recording of the group's third album, There Is Nothing Left to Lose (1999). The band briefly continued as a trio until Chris Shiflett joined as the band's lead guitarist after the completion of There Is Nothing Left to Lose. The band released its fourth album, One by One, in 2002. The group followed that release with the two-disc In Your Honor (2005), which was split between acoustic songs and heavier material. Foo Fighters released its sixth album, Echoes, Silence, Patience & Grace, in 2007. The band's seventh studio album, Wasting Light, produced by Butch Vig was released in 2011, in which Smear returned as a full member. In November 2014, the band's eighth studio album, Sonic Highways, was released as an accompanying soundtrack to the Grohl-directed 2014 miniseries of the same name. On September 15, 2017, the band released their ninth studio album, Concrete and Gold, which became their second to reach #1 in the United States.
+        </span>
+        </div>
+        <div class="main p-32" ng-if="vm.listType == 'style'">
+          <p class="font-size-24">Musical style and legacy</p>
+          <span class="container">
+          Foo Fighters is an American rock band, formed in Seattle, Washington in 1994. It was founded by Nirvana drummer Dave Grohl as a one-man project following the dissolution of Nirvana after the death of Kurt Cobain. The group got its name from the UFOs and various aerial phenomena that were reported by Allied aircraft pilots in World War II, which were known collectively as "foo fighters".
+
+          Prior to the release of Foo Fighters' 1995 debut album Foo Fighters, which featured Grohl as the only official member, Grohl recruited bassist Nate Mendel and drummer William Goldsmith, both formerly of Sunny Day Real Estate, as well as Nirvana touring guitarist Pat Smear to complete the lineup. The band began with performances in Portland, Oregon. Goldsmith quit during the recording of the group's second album, The Colour and the Shape (1997), when most of the drum parts were re-recorded by Grohl himself. Smear's departure followed soon afterward, though he would rejoin them in 2006.
+
+          They were replaced by Taylor Hawkins and Franz Stahl, respectively, although Stahl was fired before the recording of the group's third album, There Is Nothing Left to Lose (1999). The band briefly continued as a trio until Chris Shiflett joined as the band's lead guitarist after the completion of There Is Nothing Left to Lose. The band released its fourth album, One by One, in 2002. The group followed that release with the two-disc In Your Honor (2005), which was split between acoustic songs and heavier material. Foo Fighters released its sixth album, Echoes, Silence, Patience & Grace, in 2007. The band's seventh studio album, Wasting Light, produced by Butch Vig was released in 2011, in which Smear returned as a full member. In November 2014, the band's eighth studio album, Sonic Highways, was released as an accompanying soundtrack to the Grohl-directed 2014 miniseries of the same name. On September 15, 2017, the band released their ninth studio album, Concrete and Gold, which became their second to reach #1 in the United States.
+        </span>
+        </div>
+        <div class="main p-32" ng-if="vm.listType == 'member'">
+          <p class="font-size-24">Band members</p>
+          <span class="container">
+          Foo Fighters is an American rock band, formed in Seattle, Washington in 1994. It was founded by Nirvana drummer Dave Grohl as a one-man project following the dissolution of Nirvana after the death of Kurt Cobain. The group got its name from the UFOs and various aerial phenomena that were reported by Allied aircraft pilots in World War II, which were known collectively as "foo fighters".
+
+          Prior to the release of Foo Fighters' 1995 debut album Foo Fighters, which featured Grohl as the only official member, Grohl recruited bassist Nate Mendel and drummer William Goldsmith, both formerly of Sunny Day Real Estate, as well as Nirvana touring guitarist Pat Smear to complete the lineup. The band began with performances in Portland, Oregon. Goldsmith quit during the recording of the group's second album, The Colour and the Shape (1997), when most of the drum parts were re-recorded by Grohl himself. Smear's departure followed soon afterward, though he would rejoin them in 2006.
+
+          They were replaced by Taylor Hawkins and Franz Stahl, respectively, although Stahl was fired before the recording of the group's third album, There Is Nothing Left to Lose (1999). The band briefly continued as a trio until Chris Shiflett joined as the band's lead guitarist after the completion of There Is Nothing Left to Lose. The band released its fourth album, One by One, in 2002. The group followed that release with the two-disc In Your Honor (2005), which was split between acoustic songs and heavier material. Foo Fighters released its sixth album, Echoes, Silence, Patience & Grace, in 2007. The band's seventh studio album, Wasting Light, produced by Butch Vig was released in 2011, in which Smear returned as a full member. In November 2014, the band's eighth studio album, Sonic Highways, was released as an accompanying soundtrack to the Grohl-directed 2014 miniseries of the same name. On September 15, 2017, the band released their ninth studio album, Concrete and Gold, which became their second to reach #1 in the United States.
+        </span>
+        </div>
+        <md-button class="md-raised margin-top-24 margin-right-0 md-background-fg font-size-12 btn-save" ng-click="">
+          <md-icon class="md-background-fg margin-right-10 s14" md-font-icon="icon-content-save" class="s16"></md-icon>
+          Save
+        </md-button>
+      </div>
+    </div>
+  </div>

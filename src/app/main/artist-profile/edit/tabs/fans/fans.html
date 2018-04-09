@@ -1,0 +1,60 @@
+<div id="artist-edit-fans-musician">
+	<!--<div class="search" layout="row" layout-align="start center" flex style="display: none">-->
+		<!--<md-icon md-font-icon="icon-magnify" class="white-text icon search-icon"></md-icon>-->
+		<!--<input id="fans-search" class="search-input" type="text" placeholder="Search" flex>-->
+  <!--</div>-->
+  <button type="button" ng-csv="vm.follower_csv" csv-header="vm.follower_header" filename="test.csv"><img class="csv-export-btn" src="assets/icons/icons/csv.png"></button>
+	<div class="search" layout="row" layout-align="end center">
+		<md-input-container md-no-float class="md-block">
+			<md-icon md-font-icon="icon-magnify"></md-icon>
+			<input type="text" id="fans-search" class="search-input" type="text" placeholder="Search for Fans">
+		</md-input-container>
+	</div>
+	<table class="dataTable row-border hover" datatable="ng" dt-options="vm.dtOptions">
+		<colgroup>
+			<col width="17%">
+			<col width="34%">
+			<col width="17%">
+			<col width="28%">
+			<col width="4%">
+		</colgroup>
+		<thead>
+		<tr>
+			<th class="secondary-text">
+				<div class="table-header">
+					<span class="column-title">Avatar</span>
+				</div>
+			</th>
+			<th class="secondary-text">
+				<div class="table-header">
+					<span class="column-title">First Name / Last Name</span>
+				</div>
+			</th>
+			<th class="secondary-text">
+				<div class="table-header">
+					<span class="column-title">Gender</span>
+				</div>
+			</th>
+			<th class="secondary-text">
+				<div class="table-header">
+					<span class="column-title">Email</span>
+				</div>
+			</th>
+			<th></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="employee in ::vm.employees">
+			<td>
+				<img class="avatar" src="assets/images/avatars/avatar.png">
+			</td>
+			<td>{{ employee.name }}</td>
+			<td>Male</td>
+			<td>john-doe@gmail.com</td>
+			<td>
+				<md-icon class="logo-icon" md-font-icon="icon-dots-vertical" ng-click="vm.openPopup($event,track, 'tracks')"></md-icon>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

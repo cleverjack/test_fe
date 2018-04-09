@@ -1,0 +1,41 @@
+<md-dialog id="select-artists">
+    <md-toolbar class="md-accent-bg">
+        <div layout="row" class="ms-navigation-item search-box">
+            <i class="icon icon-magnify search-icon"></i>
+            <input type="text" name="search" class="search-input-box" ng-model="search" ng-keyup="vm.searchArtists(search)" placeholder="Search">
+            <md-progress-circular  class="foldedmd-hue-2 md-accent search-progress" ng-show="vm.showProgress" md-diameter="20px"></md-progress-circular>
+        </div>
+    </md-toolbar>
+    <div class="main">
+      <div class="artist-container" ms-scroll="vm.msScrollOptions" layout="column">
+        <!-- CONTACT ITEM -->
+        <div class="contact-item md-primary-bg"
+                      ng-repeat="contact in vm.contacts | orderBy: vm.listOrder :vm.listOrderAsc as filteredContacts"
+                      ng-class="{'selected': vm.isSelected(contact)}"
+                      layout="row">
+
+            <md-checkbox ng-checked="vm.exists(contact, vm.selectedContacts)"
+                          ng-click="vm.toggleSelectContact(contact, $event)"
+                          aria-label="{{vm.exists(contact, vm.selectedContacts) ? 'Deselect' : 'Select'}}"
+                          flex="10" style="margin: auto;">
+            </md-checkbox>
+
+            <img class="md-avatar" alt="" ng-if="contact.image_small" ng-src="{{contact.image_small}}" flex="10"/>
+            <img class="md-avatar" alt="" ng-if="!contact.image_small" src="assets/images/avatars/profile.jpg" flex="10"/>
+            <div flex></div>
+            <p class="text-truncate font-weight-600 padding-left-20" flex="80">{{contact.name}} {{contact.lastName}}</p>
+
+        </div>
+        <!-- CONTACT ITEM -->
+
+        <!-- NO RESULTS -->
+        <div class="no-results md-white-bg" ng-show="vm.contacts.length === 0">
+            <p translate="CONTACTS.NO_RESULTS">No results..</p>
+        </div>
+        <!-- / NO RESULTS -->
+      </div>
+    </div>
+    <md-button class="md-primary md-raised" ng-click="vm.addArtistToSimilar()">
+      ADD
+    </md-button>
+</md-dialog>

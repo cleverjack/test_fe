@@ -1,0 +1,28 @@
+<div id="similar">
+    <p class="similar-title font-size-24">Artists</p>
+    <div class="container" layout="row" layout-wrap ui-sortable="similarOptions" ui-sortable-stop="stop" ng-model="vm.similars" ng-class="{'floatingList':true}">
+        <div class="album-item" ng-repeat="artist in vm.similars  | orderBy:params.sort | filter:{name:params.query} as sortedArtists" ng-click="vm.goToArtistProfile(artist)" ng-right-click="vm.openPopup_artist($event,artist)">
+            <md-card>
+                <div class="albums-image">
+                    <md-backdrop class="md-sidenav-backdrop md-opaque ng-scope md-default-theme"></md-backdrop>
+                    <md-icon md-font-icon="icon-drag-vertical" class="s26 move-handle" ng-click="vm.clickHandler($event)"></md-icon>
+                    <!--<md-icon class="logo-icon-delete" md-font-icon="icon-trash" ng-click="vm.deleteSimilarArtist($event, artist)"></md-icon>-->
+                    <md-icon class="logo-icon-more" md-font-icon="icon-dots-horizontal" ng-click="vm.openPopup_artist($event,artist)"></md-icon>
+                    <span class="add-text" ng-click="vm.deleteSimilarArtist($event, artist)">Delete Artist</span>
+                    <img class="md-card-image album-img" ng-src="{{artist.image_small}}">
+                </div>
+                <md-card-title layout="column">
+                    <md-card-title-text>
+                        <span class="album-name">{{artist.name}}</span>
+                    </md-card-title-text>
+                </md-card-title>
+            </md-card>
+        </div>
+        <md-card ng-click="vm.showAddArtistDlg($event)">
+            <div class="empty-albums-image">
+                <img class="md-card-image album-img" alt="">
+                <span class="add-text">Add Artist</span>
+            </div>
+        </md-card>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<md-content flex ms-scroll class="padding-10">
+
+  <!-- IMAGES LIST-->
+  <div class="about-images">
+    <div class="individual-image" ng-repeat="image in vm.aboutImages">
+        <img ng-src="{{image.url}}">
+    </div>
+
+  </div>
+  <!-- / IMAGES LIST-->
+
+  <div class="description" data-ng-bind-html="vm.aboutDescription">
+  </div>
+
+
+</md-content>

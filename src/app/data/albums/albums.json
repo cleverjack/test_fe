@@ -1,0 +1,804 @@
+{
+	"albums": [
+		{
+		"image": "assets/images/albums/blues.jpg",
+		"name": "24K Magic",
+		"artist": "Michael Duff",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/chillout.jpg",
+		"name": "24K Magic",
+		"artist": "Bruno Mars",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/ambient.jpg",
+		"name": "x (Deluxe Edition)",
+		"artist": "Ed Sheeran",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/dance.jpg",
+		"name": "Coloring Book",
+		"artist": "Chance The Rapper",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/country.jpg",
+		"name": "Travis Scott",
+		"artist": "Bruno Mars",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/death-metal.jpg",
+		"name": "A Head Full Of Dreams",
+		"artist": "Coldplay",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/british.jpg",
+		"name": "BEYONCÉ [Platinum Edition]",
+		"artist": "Beyoncé",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/80s.jpg",
+		"name": "24K Magic",
+		"artist": "Bruno Mars",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/90s.jpg",
+		"name": "Unorthodox Jukebox",
+		"artist": "Bruno Mars",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/ambient.jpg",
+		"name": "Katy Perry - Teenage Dream: The Complete Confection",
+		"artist": "Katy Perry",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/classical.jpg",
+		"name": "A Rush Of Blood To The Head",
+		"artist": "Coldplay",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/classic-rock.jpg",
+		"name": "4",
+		"artist": "Beyoncé",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/acoustic.jpg",
+		"name": "Hybrid Theory (Bonus Track Version)",
+		"artist": "Linkin Park",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/electronic.jpg",
+		"name": "x (Wembley Edition)",
+		"artist": "Ed Sheeran",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/electronica.jpg",
+		"name": "Ghost Stories",
+		"artist": "Coldplay",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/folk.jpg",
+		"name": "Doo-Wops & Hooligans",
+		"artist": "Bruno Mars",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/funk.jpg",
+		"name": "V (Deluxe)",
+		"artist": "Maroon 5",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/german.jpg",
+		"name": "Parachutes",
+		"artist": "Coldplay",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/hard-rock.jpg",
+		"name": "Mylo Xyloto",
+		"artist": "Coldplay",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}, {
+		"image": "assets/images/albums/hardcore.jpg",
+		"name": "Thriller 25 Super Deluxe Edition",
+		"artist": "Michael Jackson",
+		"releaseDate": "2016-11-17",
+		"runningTiming": "33:32",
+		"runninglenght": "9",
+		"songs": [{
+			"name": "24K Magic",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Chunky",
+			"runningLenght": "3.06",
+			"likesPercent": 10
+		}, {
+			"name": "Perm",
+			"runningLenght": "3.45",
+			"likesPercent": 43
+		}, {
+			"name": "That's What I Like",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Versace On The Floor",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Finesse",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Calling All My Lovelies",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}, {
+			"name": "Too Good To Say Goodbye",
+			"runningLenght": "3.45",
+			"likesPercent": 90
+		}]
+	}]
+}

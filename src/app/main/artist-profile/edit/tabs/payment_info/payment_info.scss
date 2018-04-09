@@ -1,0 +1,51 @@
+#artist-edit-payment_info-musician {
+    padding-top: 40px;
+    .payment-title {
+        font-weight: 300;
+        padding-left: 12px;
+    }
+    md-input-container.md-default-theme .md-input[disabled], md-input-container .md-input[disabled] {
+        border-bottom-color: transparent !important;
+        color: #787c84 !important;
+        background-image: linear-gradient(90deg,#787c84 0,#787c84 33%,transparent 0) !important;
+    }
+    .fist-input {
+        padding-left: 12px;
+        padding-right: 28px;
+    }
+    .location {
+        height: 58px;
+    }
+    .gender {
+        height: 94px;
+    }
+    .gender-text {
+        padding-top: 4px;
+        padding-bottom: 8px;
+        font-size: 1.3rem;
+        color: #787c84;
+        font-weight: bold;
+    }
+    md-radio-group.layout-row md-radio-button {
+        margin-right: 20px;
+    }
+    md-radio-button.md-default-theme .md-off, md-radio-button .md-off {
+        border-color: white;
+    }
+    md-radio-button.md-default-theme .md-on, md-radio-button .md-on {
+        background-color: white;
+    }
+    .btn-save {
+        width: 160px;
+        font-size: 12px;
+        text-transform: capitalize;
+        margin-right: 28px;
+        border-radius: 2px;
+        background-color: #7655a3;
+        color: #FFFFFF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+        md-icon {
+            color: #FFFFFF;
+        }
+    }
+}

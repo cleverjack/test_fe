@@ -1,0 +1,14 @@
+<div class="photos-videos">
+    <div class="period">
+        <div class="period-title">
+            <span class="name">Artists</span>
+        </div>
+
+        <div class="period-media" layout="row" layout-wrap>
+            <div class="media" ng-repeat="artist in vm.artists">
+                <img class="preview" ng-src="{{artist.image_small}}" title="{{artist.name}}" ui-sref="app.artist-profile-show({id: artist.id})">
+                <div class="title">{{artist.name}}</div>
+            </div>
+        </div>
+    </div>
+</div>

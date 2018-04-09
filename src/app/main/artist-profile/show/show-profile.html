@@ -1,0 +1,72 @@
+<div id="artist-show-profile" class="page-layout simple tabbed">
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end" ng-style="{'background-image': 'url(' + vm.musician.image_large + ')'}">
+        <div class="user-info" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="start center">
+            <img ng-if="vm.musician.image_small" class="profile-image avatar huge" ng-src="{{vm.musician.image_small}}">
+            <img ng-if="!vm.musician.image_small" class="profile-image avatar huge" src="assets/images/avatars/katherine.jpg">
+            <div class="name">{{vm.musician.name}}</div>
+        </div>
+
+        <div class="actions" layout="row" layout-align="end center">
+            <md-button class="md-raised md-accent" aria-label="Follow" translate="PROFILE.FOLLOW"
+                      translate-attr-aria-label="PROFILE.FOLLOW">Follow
+            </md-button>
+            <md-button class="md-raised md-primary" translate="PROFILE.SEND_MESSAGE"
+                      translate-attr-aria-label="PROFILE.SEND_MESSAGE">Send Message
+            </md-button>
+        </div>
+    </div>
+    <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="subscribeContent" ng-if="vm.showSubscribeBtn">
+        <div class="subscribeBtn" layout="row" layout-align="center center">
+          <i class="fa fa-lock s80" aria-hidden="true"></i>
+          <md-button ng-click="vm.subscribe()">
+            <md-icon class="s40" md-font-icon="icon-youtube-play"></md-icon>
+            Subscribe
+          </md-button>
+        </div>
+        <!--<p class="text-center font-size-24">Please subscribe to see this artist's detail.</p>-->
+      </div>
+
+      <md-tabs md-dynamic-height md-center-tabs="false" ng-class="{'showMainContent':vm.showSubscribeBtn}">
+        <md-tab>
+          <md-tab-label>
+            <span>Music</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="stuff-tab" ng-if="!vm.isPublicPage"
+                  ng-include="'app/main/artist-profile/show/tabs/music/music.html'">
+            </md-content>
+            <md-content class="stuff-tab" ng-if="vm.isPublicPage"
+                  ng-include="'app/main/artist-profile/show/tabs/music/music.public.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Similar Artists</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="stuff-tab"
+                  ng-include="'app/main/artist-profile/show/tabs/similar/similar.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab>
+          <md-tab-label>
+            <span>Bio</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="stuff-tab"
+                  ng-include="'app/main/artist-profile/show/tabs/about/about.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+      </md-tabs>
+    </div>
+    <!-- / CONTENT -->
+
+</div>

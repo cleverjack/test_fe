@@ -1,0 +1,144 @@
+<div id="artist-edit-music-musician">
+    <p class="music-title font-size-24">Singles</p>
+    <div class="container" layout="row" layout-wrap>
+
+        <!--<md-card ng-repeat="song in vm.populars | limitTo: vm.populars.length | orderBy:params.sort | filter:params.query  as sortedTracks" ng-right-click="vm.openPopup_topTrack($event, song)">-->
+            <!--<div class="albums-image">-->
+                <!--<md-backdrop class="md-sidenav-backdrop md-opaque ng-scope md-default-theme" style="position: absolute;" ng-click="vm.playTrack(song)"></md-backdrop>-->
+                <!--&lt;!&ndash;<md-icon class="logo-icon-delete" md-font-icon="icon-trash" ng-click="vm.deletePopularSong($event, song)"></md-icon>&ndash;&gt;-->
+                <!--<md-icon class="logo-icon-edit" md-font-icon="icon-pencil" ng-click="vm.editPopularSong($event, song)"></md-icon>-->
+                <!--<md-icon class="logo-icon-more" md-font-icon="icon-dots-horizontal" ng-click="vm.openPopup_topTrack($event, song)"></md-icon>-->
+                <!--<span class="add-text" ng-click="vm.deletePopularSong($event, song)">Delete Single</span>-->
+                <!--<img ng-click="vm.playTrack(song)" ng-src={{song.image_url}} class="md-card-image album-img" height="150px" alt="">-->
+            <!--</div>-->
+            <!--<md-card-title layout="column">-->
+                <!--<md-card-title-text>-->
+                    <!--<span class="album-name">{{song.name | removeExtension | limitTo: 15}}<span ng-if="song.name.length > 15">...</span></span>-->
+                <!--</md-card-title-text>-->
+            <!--</md-card-title>-->
+        <!--</md-card>-->
+
+        <!--<md-card ng-click="vm.addPopularSong($event)">-->
+            <!--<div class="empty-albums-image">-->
+                <!--<img class="md-card-image album-img" alt="">-->
+                <!--<span class="add-text">Add Song</span>-->
+            <!--</div>-->
+        <!--</md-card>-->
+
+        <table class="dataTable row-border hover" ms-responsive-table>
+            <colgroup>
+                <col width="2%">
+                <col width="5%">
+                <col width="46%">
+                <col width="33%">
+                <col width="5%">
+                <col width="3%">
+                <col width="3%">
+                <col width="3%">
+            </colgroup>
+            <thead>
+            <th></th>
+            <th></th>
+            <th class="secondary-text">
+                <div class="table-header">
+                    <span class="column-title">Title</span>
+                </div>
+            </th>
+            <th class="secondary-text">
+                <div class="table-header">
+                    <span class="column-title">Artist</span>
+                </div>
+            </th>
+            <th class="secondary-text">
+                <div class="table-header">
+                    <span class="column-title">Time</span>
+                </div>
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            </thead>
+            <tbody ui-sortable="singlesOptions" ui-sortable-stop="stop" ng-model="vm.populars">
+            <tr class="top-song" ng-repeat="song in vm.populars | orderBy:params.sort | filter:params.query  as sortedTracks" ng-right-click="vm.openPopup_topTrack($event, song)">
+                <td class="move-handle">
+                    <md-icon md-font-icon="icon-drag-vertical" class="s16 drag-handle"></md-icon>
+                </td>
+                <td class="play-pause" ng-click="vm.loadQueueAndPlayTrack(song, $index, sortedTracks)">
+                    <span class="sr-number" ng-if="!trackIsPlaying(song)">{{$index+1}}</span>
+                    <div id="bars" ng-if="trackIsPlaying(song)">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <i class="action-icon toggle-play" ng-class="{'icon-play-circle-outline':!trackIsPlaying(song), 'icon-pause-circle-outline':trackIsPlaying(song)}"></i>
+                </td>
+                <td class="music-title" ng-click="vm.playTrack(song)">
+                    {{song.name}}
+                </td>
+                <td class="music-artist-name" ng-click="vm.playTrack(song)">{{vm.user.username ? vm.user.username : vm.musician.name}}</td>
+                <td>
+                    {{song.duration ?  song.duration : '00:00'}}
+                </td>
+                <td class="icon">
+                    <md-icon class="delete-icon s14" md-font-icon="icon-trash" ng-click="vm.deletePopularSong($event, song)"></md-icon>
+                </td>
+                <td class="icon">
+                    <md-icon class="edit-icon s14" md-font-icon="icon-pencil" ng-click="vm.editPopularSong($event, song)"></md-icon>
+                </td>
+                <td class="icon">
+                    <md-icon class="logo-icon s14" md-font-icon="icon-dots-vertical" ng-click="vm.openPopup_topTrack($event, song)"></md-icon>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="add-popular">
+                    <!--<md-icon class="s16" md-font-icon="icon-plus-circle-outline"></md-icon>-->
+                    <md-icon class="s14" md-font-icon="icon-plus-circle-outline"></md-icon>
+                    <span ng-click="vm.addPopularSong($event)">
+                        <!--<i ng-class="{'icon-plus-circle-outline' : true}"></i>-->
+                        Add Song
+                    </span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tbody>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <p class="music-title font-size-24">Albums</p>
+
+    <div class="container" layout="row" layout-wrap ui-sortable="albumOptions" ui-sortable-stop="stop" ng-model="vm.albums">
+        <md-card ng-repeat="album in vm.albums" ng-right-click="vm.openPopup_album($event, album)">
+            <div class="albums-image">
+                <md-backdrop class="md-sidenav-backdrop md-opaque ng-scope md-default-theme" style="position: absolute;" ng-click="vm.goToDetails(album)"></md-backdrop>
+                <md-icon md-font-icon="icon-drag-vertical" class="s26 move-handle" ng-click="vm.clickHandler($event)"></md-icon>
+                <md-icon class="logo-icon-more" md-font-icon="icon-dots-horizontal" ng-click="vm.openPopup_album($event, album)"></md-icon>
+                <!--<md-icon class="logo-icon-delete" md-font-icon="icon-trash" ng-click="vm.deleteAlbum($event, album)"></md-icon>-->
+                <span class="add-text" ng-click="vm.deleteAlbum($event, album)">Delete Album</span>
+                <img ng-src={{album.image}} class="md-card-image album-img" height="250px">
+            </div>
+            <md-card-title layout="column">
+                <md-card-title-text>
+                    <span class="album-name">{{album.name}}</span>
+                </md-card-title-text>
+
+            </md-card-title>
+        </md-card>
+
+        <md-card ng-click="vm.addAlbum($event)">
+            <div class="empty-albums-image">
+                <img class="md-card-image album-img" alt="">
+                <span class="add-text">Add Album</span>
+            </div>
+        </md-card>
+    </div>
+</div>
+
