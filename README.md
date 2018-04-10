@@ -11,6 +11,12 @@ npm install -g gulp bower
 
 git clone https://github.com/limeindacoconut/mrlfuse.git
 
+#python 2.7 install
+
+download python https://www.python.org/download/releases/2.7/
+
+and install
+
 # Installing
 
 npm install
