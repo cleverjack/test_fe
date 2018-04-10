@@ -17,6 +17,8 @@ download python https://www.python.org/download/releases/2.7/
 
 and install
 
+system environment variable setup for python: path-> c:/python27
+
 # Installing
 
 npm install
