@@ -1,0 +1,61 @@
+<md-dialog aria-label="Plan Details">
+  <form ng-cloak name="planDetailsForm">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Plan Details</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()" ng-if="!creatingPlan">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+          <div class="fist-input" layout="column" flex="100">
+            <md-input-container>
+              <label style="color: #000 !important">Enter Plan Name</label>
+              <input type="text" class="black-text" name="plan_name" ng-model="planDetails.plan_name" style="color: #000 !important" required>
+              <div ng-if="planErrors.plan_name && planErrors.plan_name[0]" style="color: rgb(213,0,0); !important">
+                <div ng-bind="planErrors.plan_name[0]"></div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+          <div class="fist-input" layout="column" flex="100">
+            <md-input-container>
+              <label style="color: #000 !important">Enter Plan Description</label>
+              <input type="text" class="black-text" name="description" ng-model="planDetails.description" style="color: #000 !important" required>
+              <div ng-if="planErrors.description && planErrors.description[0]" style="color: rgb(213,0,0); !important">
+                <div ng-bind="planErrors.description[0]"></div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+          <div class="fist-input" layout="column" flex="100">
+            <md-input-container>
+              <label style="color: #000 !important">Enter Plan Amount</label>
+              <input type="text" name="amount" class="black-text" ng-model="planDetails.amount" style="color: #000 !important" required>
+              <div ng-if="planErrors.amount && planErrors.amount[0]" style="color: rgb(213,0,0); !important">
+                <div ng-bind="planErrors.amount[0]"></div>
+              </div>
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button ng-click="cancel()" ng-if="!creatingPlan">
+        Cancel
+      </md-button>
+      <md-button class="md-raised md-primary" ng-if="!creatingPlan" ng-click="savePlan()">
+        Add
+      </md-button>
+      <md-button class="md-raised md-primary" ng-if="creatingPlan">
+        Creating Plan..
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

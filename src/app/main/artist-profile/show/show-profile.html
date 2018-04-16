@@ -2,18 +2,15 @@
     <!-- HEADER -->
     <div class="header md-accent-bg" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="space-between end" ng-style="{'background-image': 'url(' + vm.musician.image_large + ')'}">
         <div class="user-info" layout="column" layout-align="center center" layout-gt-sm="row" layout-align-gt-sm="start center">
-            <img ng-if="vm.musician.image_small" class="profile-image avatar huge" ng-src="{{vm.musician.image_small}}">
-            <img ng-if="!vm.musician.image_small" class="profile-image avatar huge" src="assets/images/avatars/katherine.jpg">
+            <!-- <img ng-if="vm.musician.image_small" class="profile-image avatar huge" ng-src="{{vm.musician.image_small}}">
+            <img ng-if="!vm.musician.image_small" class="profile-image avatar huge" src="assets/images/avatars/katherine.jpg"> -->
             <div class="name">{{vm.musician.name}}</div>
         </div>
 
         <div class="actions" layout="row" layout-align="end center">
-            <md-button class="md-raised md-accent" aria-label="Follow" translate="PROFILE.FOLLOW"
-                      translate-attr-aria-label="PROFILE.FOLLOW">Follow
-            </md-button>
-            <md-button class="md-raised md-primary" translate="PROFILE.SEND_MESSAGE"
-                      translate-attr-aria-label="PROFILE.SEND_MESSAGE">Send Message
-            </md-button>
+            <md-button class="md-raised md-accent" ng-if="vm.planDetails && vm.payementDetails && vm.payementDetails.stipe_publishable_key" aria-label="Subscribe" ng-click="vm.showSubscriptionPopup($event)">Subscribe</md-button>
+            <md-button class="md-raised md-accent" aria-label="Follow" translate="PROFILE.FOLLOW" translate-attr-aria-label="PROFILE.FOLLOW">Follow</md-button>
+            <md-button class="md-raised md-primary" translate="PROFILE.SEND_MESSAGE" translate-attr-aria-label="PROFILE.SEND_MESSAGE">Send Message</md-button>
         </div>
     </div>
     <!-- / HEADER -->

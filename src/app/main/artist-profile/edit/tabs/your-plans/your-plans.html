@@ -1,0 +1,67 @@
+<div id="artist-edit-music-musician">
+  <p class="music-title font-size-24">Plans</p>
+  <table class="dataTable row-border hover" ms-responsive-table>
+    <colgroup>
+      <col width="2%">
+      <col width="5%">
+      <col width="46%">
+      <col width="33%">
+      <col width="5%">
+      <col width="3%">
+      <col width="3%">
+      <col width="3%">
+    </colgroup>
+    <thead>
+      <th></th>
+      <th></th>
+      <th class="secondary-text">
+        <div class="table-header">
+          <span class="column-title">Plan Name</span>
+        </div>
+      </th>
+      <th class="secondary-text">
+        <div class="table-header">
+          <span class="column-title">Plan Name</span>
+        </div>
+      </th>
+      <th class="secondary-text">
+        <div class="table-header">
+          <span class="column-title">Plan Amount</span>
+        </div>
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr class="top-song" ng-repeat="plan in vm.plans">
+        <td class="move-handle">
+          <md-icon md-font-icon="icon-drag-vertical" class="s16 drag-handle"></md-icon>
+        </td>
+        <td class="play-pause" ng-click="vm.loadQueueAndPlayTrack(song, $index, sortedTracks)">
+          <span class="sr-number">{{$index+1}}</span>
+        </td>
+        <td class="music-title" ng-click="vm.playTrack(song)">
+          {{plan.plan_name}}
+        </td>
+        <td class="music-artist-name">{{plan.description}}</td>
+        <td>
+          ${{plan.amount || 0}}
+        </td>
+      </tr>
+      <tr ng-click="showAddPlanForm($event)" style="cursor: pointer;" ng-if="!vm.plans.length">
+        <td></td>
+        <td></td>
+        <td class="add-popular">
+          <md-icon class="s14" md-font-icon="icon-plus-circle-outline"></md-icon>
+          <span>Add New Plan</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tbody>
+  </table>
+</div>

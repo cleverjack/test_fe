@@ -8,21 +8,111 @@
             <div class="fist-input" layout="column" flex="100">
                 <md-input-container>
                     <label>Enter the Email address associated with your Paypal account</label>
-                    <input type="text" name="paymentaddress" ng-model="vm.form.paymentaddress" ng-pattern="/^.+@.+\..+$/" ng-disabled="vm.paymentconnected" required>
-                    <div ng-messages="paymentForm.paymentaddress.$error" role="alert">
+                    <input type="text" name="paypal_email" ng-model="vm.form.paypal_email" ng-pattern="/^.+@.+\..+$/" ng-disabled="vm.paypal_email" required>
+                    <div ng-messages="paymentForm.paypal_email.$error" role="alert">
                         <div ng-message="required">
-                            <span>Website field is required</span>
+                            <span>PayPal Email field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter client ID associated with your Paypal account</label>
+                    <input type="text" name="paypal_client_id" ng-model="vm.form.paypal_client_id" ng-disabled="vm.paypal_client_id" required>
+                    <div ng-messages="paymentForm.paypal_client_id.$error" role="alert">
+                        <div ng-message="required">
+                            <span>PayPal client ID field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter client secret associated with your Paypal account</label>
+                    <input type="text" name="paypal_client_secret" ng-model="vm.form.paypal_client_secret" ng-disabled="vm.paypal_client_secret" required>
+                    <div ng-messages="paymentForm.paypal_client_secret.$error" role="alert">
+                        <div ng-message="required">
+                            <span>PayPal client secret field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter username associated with your Paypal account</label>
+                    <input type="text" name="paypal_username" ng-model="vm.form.paypal_username" ng-disabled="vm.paypal_username" required>
+                    <div ng-messages="paymentForm.paypal_username.$error" role="alert">
+                        <div ng-message="required">
+                            <span>PayPal username field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter api password associated with your Paypal account</label>
+                    <input type="text" name="paypal_api_password" ng-model="vm.form.paypal_api_password" ng-disabled="vm.paypal_api_password" required>
+                    <div ng-messages="paymentForm.paypal_api_password.$error" role="alert">
+                        <div ng-message="required">
+                            <span>PayPal api password field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter signature associated with your Paypal account</label>
+                    <input type="text" name="paypal_sign" ng-model="vm.form.paypal_sign" ng-disabled="vm.paypal_sign" required>
+                    <div ng-messages="paymentForm.paypal_sign.$error" role="alert">
+                        <div ng-message="required">
+                            <span>PayPal signature field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter secret/private key associated with your stripe account</label>
+                    <input type="text" name="stripe_key" ng-model="vm.form.stripe_key" ng-disabled="vm.stripe_key" required>
+                    <div ng-messages="paymentForm.stripe_key.$error" role="alert">
+                        <div ng-message="required">
+                            <span>Stripe secret key field is required</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="fist-input" layout="column" flex="100">
+                <md-input-container>
+                    <label>Enter publishable key associated with your stripe account</label>
+                    <input type="text" name="stipe_publishable_key" ng-model="vm.form.stipe_publishable_key" ng-disabled="vm.stipe_publishable_key" required>
+                    <div ng-messages="paymentForm.stipe_publishable_key.$error" role="alert">
+                        <div ng-message="required">
+                            <span>PayPal publishable key field is required</span>
                         </div>
                     </div>
                 </md-input-container>
             </div>
         </div>
         <div layout="row" layout-align="end center" layout-wrap>
-            <md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)">
-                <!--<md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)">-->
+            <md-button class="md-raised btn-save" ng-click="vm.saveArtistpayment(vm.form)" ng-disabled="paymentForm.$invalid">
                 <md-icon ng-if="!vm.paymentconnected" md-font-icon="icon-plus-circle-outline" class="s16"></md-icon>
                 <md-icon ng-if="vm.paymentconnected" md-font-icon="icon-minus-circle-outline" class="s16"></md-icon>
-                <span ng-if="!vm.paymentconnected">Connect Account</span>
+                <span ng-if="!vm.paymentconnected"><span ng-if="!vm.paymentDetailsUpdating">Connect Account</span><span ng-if="vm.paymentDetailsUpdating">Please wait..</span></span>
                 <span ng-if="vm.paymentconnected">Disconnect Account</span>
             </md-button>
         </div>

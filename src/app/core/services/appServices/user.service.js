@@ -18,7 +18,7 @@
        this.followUser = followUser;
        this.unfollowUser = unfollowUser;
        this.saveAvatar = saveAvatar;
-
+       this.subscribeToArtist = subscribeToArtist;
        function updateProfile(data) {
          // console.log('data',data);
           var req = {
@@ -153,6 +153,21 @@
           console.log('Unfollow', res.data);
           return res.data;
         });
+      }
+      function subscribeToArtist(data) {
+         var req = {
+            method: 'POST',
+            url: apiUrl().baseUrl + 'subscribe-artist',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: $localStorage.session.user.token
+            },
+            data: data
+          };
+
+          return $http(req).then(function(res){
+            return res.data;
+          }); 
       }
 
     }

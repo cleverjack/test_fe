@@ -9,7 +9,7 @@
 
         /** @ngInject */
         function apiUrl(){
-          var baseUrl = "http://localhost/";//"https://api.oohyah.com/";//
+          var baseUrl = "http://localhost/luanzhi_test_be/";//"https://api.oohyah.com/";//
           return {
             'baseUrl': baseUrl,
             'login' : baseUrl + 'loginUser',

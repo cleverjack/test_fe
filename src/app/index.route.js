@@ -14,7 +14,6 @@
 
         $urlRouterProvider.otherwise('/');
 
-
         /**
          * Layout Style Switcher
          *
@@ -33,10 +32,9 @@
                 $cookies = _$cookies;
             }
         ]);
-
         // Get active layout
         var oohyahLayoutStyle = $cookies.get('oohyahLayoutStyle') || 'verticalNavigation';
-
+        
         var layouts = {
             verticalNavigation  : {
                 main      : 'app/core/layouts/vertical-navigation.html',

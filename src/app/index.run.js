@@ -14,9 +14,7 @@
         {
             $rootScope.isOpenMenu = false;
             $rootScope.loadingProgress = true;
-
             $rootScope.stage = 0;
-
         });
 
         // De-activate loading indicator

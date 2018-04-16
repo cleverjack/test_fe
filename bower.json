@@ -49,7 +49,8 @@
     "lightbox2": "lightbox#^2.10.0",
     "ng-context-menu": "^1.0.3",
     "angular-image-compress": "^0.1.5",
-    "wavesurfer-angular": "^1.0.1"
+    "wavesurfer-angular": "^1.0.1",
+    "angular-raven": "^0.6.2"
   },
   "devDependencies": {
     "angular-mocks": "1.5.11"

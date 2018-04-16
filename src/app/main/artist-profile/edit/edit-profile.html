@@ -84,17 +84,17 @@
             </md-content>
           </md-tab-body>
         </md-tab>
+        
+        -->
         <md-tab>
           <md-tab-label>
             <span>Payment Info</span>
           </md-tab-label>
           <md-tab-body>
-            <md-content class="payment-tab"
-                        ng-include="'app/main/artist-profile/edit/tabs/payment_info/payment_info.html'">
+            <md-content class="payment-tab" ng-include="'app/main/artist-profile/edit/tabs/payment_info/payment_info.html'">
             </md-content>
           </md-tab-body>
         </md-tab>
-        -->
         <md-tab>
           <md-tab-label>
             <span>Service Plans</span>
@@ -102,6 +102,16 @@
           <md-tab-body>
             <md-content class="service-tab"
                         ng-include="'app/main/artist-profile/edit/tabs/service_plans/service_plans.html'">
+            </md-content>
+          </md-tab-body>
+        </md-tab>
+        <md-tab ng-if="vm.hasPaymentInfo">
+          <md-tab-label>
+            <span>Your Plans</span>
+          </md-tab-label>
+          <md-tab-body>
+            <md-content class="your-plan-tab"
+                        ng-include="'app/main/artist-profile/edit/tabs/your-plans/your-plans.html'">
             </md-content>
           </md-tab-body>
         </md-tab>
