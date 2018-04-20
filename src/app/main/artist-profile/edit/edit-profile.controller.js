@@ -6,7 +6,7 @@
     .controller('ArtistEditProfileController', ArtistEditProfileController);
 
   /** @ngInject */
-  function ArtistEditProfileController(musician, Employees, countries, $localStorage, $mdDialog, $rootScope, $scope, $state, $mdSidenav, utils, appCons, ProfileService, MusicianService) {
+  function ArtistEditProfileController(musician, Employees, countries, $localStorage, $mdDialog, $rootScope, $scope, $state, $mdSidenav, utils, appCons, ProfileService, MusicianService, $timeout) {
 
     var vm = this;
 
@@ -44,9 +44,39 @@
         fans: 5,
         stripe_key: 'sk_test_zCSjOxiIHTNmPJUBdg4hFQAZ',
         stripe_id: 'plan_CfnSLNyxwPjUYY',
+        is_selected: false
+      },
+      {
+        plan_id: 2,
+        amount: 5,
+        plan_name: '<span>Independent</span><br><span>Artist</span>',
+        description: '<div class="term">Artist Sets Subscription Price </div><div class="term">Oohyah Offers Same Price </div>',
+        fans: 10,
+        stripe_key: 'sk_test_zCSjOxiIHTNmPJUBdg4hFQAZ',
+        stripe_id: 'plan_CfnSLNyxwPjUYY',
+        is_selected: true
+      },
+      {
+        plan_id: 3,
+        amount: 2,
+        plan_name: '<span>Major Label</span><br><span>Artist</span>',
+        description: '<div class="term">Artist Sets Subscription Price </div><div class="term">Oohyah Offers Same Price </div>',
+        fans: 500,
+        stripe_key: 'sk_test_zCSjOxiIHTNmPJUBdg4hFQAZ',
+        stripe_id: 'plan_CfnSLNyxwPjUYY',
+        is_selected: false
+      },
+      {
+        plan_id: 4,
+        amount: 0.5,
+        plan_name: '<span>Super Star</span><br><span>Artist</span>',
+        description: '<div class="term super-term">6% Service Fee</div>',
+        fans: 500,
+        stripe_key: 'sk_test_zCSjOxiIHTNmPJUBdg4hFQAZ',
+        stripe_id: 'plan_CfnSLNyxwPjUYY',
+        is_selected: false
       }
     ]
-
     if (vm.form.paymentaddress == '' || vm.form.paymentaddress == 'undefined' || vm.form.paymentaddress == null) vm.paymentconnected = false;
     else vm.paymentconnected = true;
 
@@ -102,14 +132,38 @@
     vm.hasPaymentInfo = false;
     vm.paymentDetailsUpdating = false;
     vm.saveArtistpayment = saveArtistpayment;
-
+    
+    vm.paymentInfoErrorMessage = null;
+    vm.paymentInfoSuccessMessage = null;
+    
     function saveArtistpayment(form) {
+      vm.paymentInfoErrorMessage = null;
+      vm.paymentInfoSuccessMessage = null;
       vm.paymentDetailsUpdating = true;
+      
       MusicianService.saveMusicianPaymentInfo(form).then(function(data) {
         vm.paymentDetailsUpdating = false;
         vm.hasPaymentInfo = (vm.form.paypal_api_password && vm.form.paypal_client_id && vm.form.paypal_client_secret && vm.form.paypal_sign && vm.form.paypal_username && vm.form.stipe_publishable_key && vm.form.stripe_key);
         vm.user.paypal_email = form.paypal_email;
         $localStorage.session.user = vm.user;
+        if (data.status) {
+          vm.paymentInfoErrorMessage = null;
+          vm.paymentInfoSuccessMessage = data.message;
+        }else{
+          vm.paymentInfoSuccessMessage = null;
+          vm.paymentInfoErrorMessage = data.message;
+        }
+        $timeout(function(){
+          vm.paymentInfoSuccessMessage = null;
+          vm.paymentInfoErrorMessage = null;
+        }, 5000);
+      }, function(err){
+        vm.paymentInfoErrorMessage = err.body;
+        vm.paymentInfoSuccessMessage = null;
+        $timeout(function(){
+          vm.paymentInfoSuccessMessage = null;
+          vm.paymentInfoErrorMessage = null;
+        }, 5000);
       });
     }
 
@@ -118,7 +172,6 @@
     function getArtistpayment() {
       MusicianService.getArtistpayment().then(function(data) {
         vm.form = data.data ? data.data : {};
-        console.log(vm.user)
         if (vm.user.paypal_email) {
           vm.form.paypal_email = vm.user.paypal_email; 
         }
@@ -151,12 +204,9 @@
           clickOutsideToClose: true
         })
         .then(function(data) {
-          //console.log(data);
         }, function() {
-          //console.log('Popup Cancelled/Closed!');
         });
     };
-
     function AddPlanController($scope, $mdDialog, MusicianService) {
       $scope.planDetails = {};
       $scope.planErrors = {};
@@ -187,7 +237,6 @@
       };
     }
     /*Create plan Popup and controller End*/
-
     vm.planSelected = function(plan, ev) {
         vm.planDetails = plan;
         $mdDialog.show({
@@ -198,7 +247,6 @@
           clickOutsideToClose: true
         })
         .then(function(data) {
-          //console.log(data);
         }, function() {
           console.log('Popup Cancelled/Closed!');
         });

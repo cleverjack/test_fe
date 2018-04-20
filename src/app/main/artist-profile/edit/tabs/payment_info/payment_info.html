@@ -2,7 +2,11 @@
     <form name="paymentForm" ng-submit="" novalidate>
         <div class="payment-title">
             <p class="m-0 font-size-12">To recive direct payments from your fans</p>
-            <p class="m-0 mb-40 font-size-18">Please enter your Paypal payment information</p>
+            <p class="m-0 mb-40 font-size-18">Please enter your payment information</p>
+        </div>
+        <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
+            <div class="alert alert-success" ng-if="vm.paymentInfoSuccessMessage">{{vm.paymentInfoSuccessMessage}}</div>
+            <div class="alert alert-danger" ng-if="vm.paymentInfoErrorMessage">{{vm.paymentInfoErrorMessage}}</div>
         </div>
         <div layout="row" layout-align="space-between center" flex="100" layout-wrap>
             <div class="fist-input" layout="column" flex="100">

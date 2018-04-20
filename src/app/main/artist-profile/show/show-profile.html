@@ -8,7 +8,8 @@
         </div>
 
         <div class="actions" layout="row" layout-align="end center">
-            <md-button class="md-raised md-accent" ng-if="vm.planDetails && vm.payementDetails && vm.payementDetails.stipe_publishable_key" aria-label="Subscribe" ng-click="vm.showSubscriptionPopup($event)">Subscribe</md-button>
+            <md-button class="md-raised md-accent" ng-if="vm.planDetails && vm.payementDetails && vm.payementDetails.stipe_publishable_key && !vm.planDetails.isSubscribed" aria-label="Subscribe" ng-click="vm.showSubscriptionPopup($event)">Subscribe</md-button>
+            <md-button class="md-raised md-accent" ng-if="vm.planDetails && vm.payementDetails && vm.payementDetails.stipe_publishable_key && vm.planDetails.isSubscribed" aria-label="Subscribe">Subscribed</md-button>
             <md-button class="md-raised md-accent" aria-label="Follow" translate="PROFILE.FOLLOW" translate-attr-aria-label="PROFILE.FOLLOW">Follow</md-button>
             <md-button class="md-raised md-primary" translate="PROFILE.SEND_MESSAGE" translate-attr-aria-label="PROFILE.SEND_MESSAGE">Send Message</md-button>
         </div>
@@ -65,5 +66,4 @@
       </md-tabs>
     </div>
     <!-- / CONTENT -->
-
 </div>
